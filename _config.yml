@@ -1,0 +1,36 @@
+# Permalinks
+permalink: pretty
+
+# Setup
+title:        "Eliezer Talon"
+tagline:      "iOS engineer – I write mainly about software development."
+description:  "iOS engineer. Musician. Runner. Scuba diver. From Canary Islands, now living in Zürich."
+url:          "https://elitalon.github.io"
+baseurl:      ""
+paginate:     5
+timezone:     "Europe/Zurich"
+
+# About/contact
+author:
+  name:   "Eliezer Talon"
+  url:    https://twitter.com/elitalon
+  email:  elitalon@gmail.com
+social_media:
+  twitter:    "https://twitter.com/elitalon"
+  github:     "https://github.com/elitalon"
+  linkedin:   "https://ch.linkedin.com/in/elitalon"
+  instagram:  "https://www.instagram.com/elitalon"
+
+# Custom vars
+version: 1.0.0
+
+# Build settings
+exclude: ['Gemfile', 'Gemfile.lock']
+
+# Plugins
+gems: [jekyll-paginate]
+
+# License
+license:
+  url:    "http://creativecommons.org/licenses/by/4.0/"
+  title:  "Creative Commons Attribution 4.0"
