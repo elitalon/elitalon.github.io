@@ -5,7 +5,7 @@ permalink: pretty
 title:        "Eliezer Talón"
 tagline:      "iOS engineer living in Zürich"
 description:  "I am an iOS engineer, musician, runner, scuba diver and apprentice snowboarder. From Canary Islands, now living in Zürich. I write here mostly about software development."
-url:          "https://elitalon.github.io"
+url:          "https://elitalon.com"
 baseurl:      ""
 paginate:     5
 timezone:     "Europe/Zurich"
