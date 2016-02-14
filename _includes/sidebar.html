@@ -11,11 +11,6 @@
   <nav class="sidebar-nav">
     <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
 
-    {% comment %}
-      The code below dynamically generates a sidebar nav of pages with
-      `layout: page` in the front-matter. See readme for usage.
-    {% endcomment %}
-
     {% assign pages_list = site.pages | sort:"url" %}
     {% for node in pages_list %}
       {% if node.title != null %}
@@ -25,14 +20,23 @@
       {% endif %}
     {% endfor %}
 
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
-    <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
+    <!-- <a class="sidebar-nav-item" href=""></a> -->
+    <!-- <span class="sidebar-nav-item"></span> -->
   </nav>
 
+  <div class="sidebar-item" style="text-align: center;">
+    {% assign prepend_dash = false %}
+    {% for social_media in site.social_media %}
+      {% assign title = social_media[0] %}
+      {% assign url = social_media[1] %}
+      {% if prepend_dash %}&nbsp;–&nbsp;{% endif %}
+      <a href="{{ url }}" title="{{ title }}">{{ title }}</a>
+      {% assign prepend_dash = true %}
+    {% endfor %}
+  </div>
+
   <div class="sidebar-item">
-    <p>
-      &copy; {{ site.time | date: '%Y' }}. All rights reserved.
+    <p>This site is <a href="https://github.com/elitalon/elitalon.github.io" title="View source code on GitHub">open source</a>. Content licensed under <a rel="license" href="{{ site.license.url }}">{{ site.license.title }}</a>
     </p>
   </div>
 </div>

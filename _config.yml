@@ -2,9 +2,9 @@
 permalink: pretty
 
 # Setup
-title:        "Eliezer Talon"
-tagline:      "iOS engineer – I write mainly about software development."
-description:  "iOS engineer. Musician. Runner. Scuba diver. From Canary Islands, now living in Zürich."
+title:        "Eliezer Talón"
+tagline:      "iOS engineer living in Zürich"
+description:  "I am an iOS engineer, musician, runner, scuba diver and apprentice snowboarder. From Canary Islands, now living in Zürich. I write here mostly about software development."
 url:          "https://elitalon.github.io"
 baseurl:      ""
 paginate:     5
@@ -12,14 +12,12 @@ timezone:     "Europe/Zurich"
 
 # About/contact
 author:
-  name:   "Eliezer Talon"
-  url:    https://twitter.com/elitalon
-  email:  elitalon@gmail.com
+  name:   "Eliezer Talón"
+  url:    "https://twitter.com/elitalon"
+  email:  "elitalon@gmail.com"
 social_media:
   twitter:    "https://twitter.com/elitalon"
-  github:     "https://github.com/elitalon"
   linkedin:   "https://ch.linkedin.com/in/elitalon"
-  instagram:  "https://www.instagram.com/elitalon"
 
 # Custom vars
 version: 1.0.0
