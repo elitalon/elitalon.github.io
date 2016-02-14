@@ -29,7 +29,7 @@
     {% for social_media in site.social_media %}
       {% assign title = social_media[0] %}
       {% assign url = social_media[1] %}
-      {% if prepend_dash %}&nbsp;–&nbsp;{% endif %}
+      {% if prepend_dash %}&nbsp;&ndash;&nbsp;{% endif %}
       <a href="{{ url }}" title="{{ title }}">{{ title }}</a>
       {% assign prepend_dash = true %}
     {% endfor %}
