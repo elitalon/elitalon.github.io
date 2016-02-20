@@ -2,13 +2,26 @@
 permalink: pretty
 
 # Setup
+url:                "https://elitalon.com"
+baseurl:            ""
+paginate:           5
+timezone:           "Europe/Zurich"
+
+# Build settings
+exclude: ['Gemfile', 'Gemfile.lock']
+
+# Writing
+excerpt_separator:  <!--more-->
+kramdown:
+  input: GFM
+
+# Plugins
+gems: [jekyll-paginate]
+
+# Default content
 title:        "Eliezer Talón"
 tagline:      "iOS engineer living in Zürich"
 description:  "I am an iOS engineer, musician, runner, scuba diver and apprentice snowboarder. From Canary Islands, now living in Zürich. I write here mostly about software development."
-url:          "https://elitalon.com"
-baseurl:      ""
-paginate:     5
-timezone:     "Europe/Zurich"
 
 # About/contact
 author:
@@ -18,15 +31,6 @@ author:
 social_media:
   twitter:  "https://twitter.com/elitalon"
   linkedin: "https://ch.linkedin.com/in/elitalon"
-
-# Custom vars
-version: 1.0.0
-
-# Build settings
-exclude: ['Gemfile', 'Gemfile.lock']
-
-# Plugins
-gems: [jekyll-paginate]
 
 # License
 license:
