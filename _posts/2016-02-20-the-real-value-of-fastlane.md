@@ -11,7 +11,7 @@ We already had [nomad](https://github.com/nomad), a set of command line utilitie
 
 
 ## Cleaning a Makefile
-I usually include a [Makefile](https://www.gnu.org/software/make/manual/make.html#Introduction) with my iOS projects, where the *targets* are simply shortcuts to perform different tasks. Each target contains one or more *recipes* in order to complete it. For example, a *"deploy"* target may run the tests, create an [IPA](https://en.wikipedia.org/wiki/.ipa_(file_extension)) and send it somewhere via `curl`. When setting up a CI service, those targets can be easily triggered with `make deploy`.
+I usually include a [Makefile](https://www.gnu.org/software/make/manual/make.html#Introduction) with my iOS projects, where the *targets* are simply shortcuts to perform different tasks (see [an example](https://gist.github.com/elitalon/0f482d02e8fcaecf0da2)). Each target contains one or more *recipes* in order to complete it. For example, a *"deploy"* target may run the tests, create an [IPA](https://en.wikipedia.org/wiki/.ipa_(file_extension)) and send it somewhere via `curl`. When setting up a CI service, those targets can be easily triggered with `make deploy`.
 
 I started replacing the recipes with the [iOS toolchain](https://github.com/fastlane/fastlane/blob/7aeb29aea2eb437f8c6bd79f9c657528f160a3d0/README.md#fastlane-toolchain) provided by fastlane. I often use [xcpretty](https://github.com/supermarin/xcpretty) to filter the output too, so I was able to clean up the initial Makefile a little bit. But still, it felt like I was simply replacing one set of tools with another.
 
