@@ -1,6 +1,6 @@
 # elitalon.com
 
-This is the source code of the blog [elitalon.com](https://elitalon.com).
+This is the source code of the blog [elitalon.com](http://elitalon.com).
 
 
 ## Author
