@@ -3,7 +3,7 @@ layout: post
 title: My failed attempt to learn Haskell
 published: true
 ---
-When Swift [was announced in WWDC 2014](https://developer.apple.com/videos/play/wwdc2014/101/), a lot of attention was brought into functional programming. That was not anything new: applying functional programming techniques to modern software development has been a trend in general. But within the Apple development ecosystem in particular, Swift really made everyone to take it more seriously.
+When Swift [was announced in WWDC 2014](https://developer.apple.com/videos/play/wwdc2014/101/), a lot of attention was brought into [functional programming](). That was not anything new: applying such techniques to modern software development has been a trend in general. But within the Apple development ecosystem in particular, Swift really made everyone to take it more seriously.
 
 <!--more-->
 
@@ -36,14 +36,14 @@ I must admit that this journey was not fun at all (with the exception of "Haskel
 But I do not think the problem here is the language itself. While I think Haskell is not a beautiful language, a lot of thought has been put into its design. The techniques that it provides are really smart and elegant, maybe too smart sometimes. If I had to criticise something, I would say that:
 
 * The syntax is horrible.
-* Implicit things happen, which are hard to follow.
+* Implicit things happen, and they are difficult to follow.
 
 The problem with Haskell is that it needs better communication and marketing. The resources for learning are not good, most of the examples are based on math stuff and there is a big gap between those examples and real-life problems.
 
 ## But I am not done yet
 
-Despite my failed attempt to learn Haskell, I want to leave you with a positive note.
+Despite my failed attempt to learn, I want to leave you with a positive note.
 
-It helped me understand better how Swift is designed and how Haskell, [Scala](http://www.scala-lang.org) and some other functional languages had an impact on it. When the Swift compiler makes something implicit, I can see why and where that comes from.
+Haskell helped me understand better how Swift is designed and how Haskell, [Scala](http://www.scala-lang.org) and some other functional languages had an impact on it. When the Swift compiler makes something implicit, I can see why and where that comes from.
 
-I do not see myself writing Haskell, but it got me interested in learning more about functional programming. I will take a different approach this time, though. I intend to learn [Erlang](http://www.erlang.org) and the applications of [OTP](https://en.wikipedia.org/wiki/Open_Telecom_Platform). But first I am going to start with [Elixir](http://elixir-lang.org), just for the sake of using a familiar syntax for once.
+I do not see myself writing software in Haskell, but it got me interested in learning more about functional programming. I will take a different approach this time, though. I intend to learn [Erlang](http://www.erlang.org) and the applications of [OTP](https://en.wikipedia.org/wiki/Open_Telecom_Platform). But first I am going to start with [Elixir](http://elixir-lang.org), just for the sake of using a familiar syntax for once.
