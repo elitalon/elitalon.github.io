@@ -2,10 +2,11 @@
 permalink: pretty
 
 # Setup
-url:                "http://elitalon.com"
-baseurl:            ""
-paginate:           5
-timezone:           "Europe/Zurich"
+url:      "http://elitalon.com"
+baseurl:  ""
+paginate: 5
+timezone: "Europe/Zurich"
+feed_url: "http://elitalon.com/feed.xml"
 
 # Build settings
 exclude: ['Gemfile', 'Gemfile.lock']
