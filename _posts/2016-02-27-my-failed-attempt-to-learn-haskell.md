@@ -2,7 +2,7 @@
 title: My failed attempt to learn Haskell
 description: An unpleasant journey towards learning functional programming through Haskell
 ---
-When Swift [was announced in WWDC 2014](https://developer.apple.com/videos/play/wwdc2014/101/), a lot of attention was brought into [functional programming](). That was not anything new: applying such techniques to modern software development has been a trend in general. But within the Apple development ecosystem in particular, Swift really made everyone to take it more seriously.
+A lot of attention was brought into [functional programming]() when Swift [was announced in WWDC 2014](https://developer.apple.com/videos/play/wwdc2014/101/). That was not anything new: applying such techniques to modern software development has been a trend in general. But within the Apple development ecosystem in particular, Swift really made everyone to take it more seriously.
 
 <!--more-->
 
