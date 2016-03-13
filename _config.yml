@@ -38,3 +38,18 @@ license:
   source: "https://github.com/elitalon/elitalon.github.io"
   url:    "http://creativecommons.org/licenses/by/4.0/"
   title:  "Creative Commons Attribution 4.0"
+
+# Front matter defaults
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      description: "Eliezer Talón – iOS engineer living in Zürich"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      published: true

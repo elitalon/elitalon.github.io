@@ -1,7 +1,6 @@
 ---
-layout: post
 title: The real value of fastlane
-published: true
+description: Discovering where fastlane really shines when going beyond the default tools for more complex deployment pipelines
 ---
 When [fastlane](https://fastlane.tools) started to get attention by the community, I was not particularly excited about it. I thought it was certainly a cool project, but it was not solving any real problem.
 
