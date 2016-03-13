@@ -17,7 +17,7 @@ kramdown:
   input: GFM
 
 # Plugins
-gems: [jekyll-paginate]
+gems: [jekyll-paginate, jekyll-sitemap]
 
 # Default content
 title:        "Eliezer Talón"
