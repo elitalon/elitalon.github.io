@@ -46,6 +46,6 @@ If you really want to revert a feature, you [design it in a way that you can do 
 
 Git is a difficult tool to master and users can do whatever they want with it. Making mistakes is easy and it takes a while to develop good practices and learn how to avoid or solve [some pitfalls](http://stackoverflow.com/q/9264314/592454). So it's easy to understand why people have embraced a complex workflow of limiting but well-defined rules.
 
-It's also difficult to change things when almost every developer is familiar with it. Conventions are powerful. And the fact major repository hosting services do not offer a way to fast-forward merges does not help either.
+It's also difficult to change things when almost every developer is familiar with it. Conventions are powerful. And the fact that major repository hosting services do not offer a way to fast-forward merges does not help either.
 
 I am certainly not the first one that saw all the issues stated above. [Scott Chacon](https://twitter.com/chacon) himself [wrote about it](http://scottchacon.com/2011/08/31/github-flow.html) in 2011 and proposed the GitHub approach as a simpler alternative. If you are willing to escape from GitFlow, I would start there.
