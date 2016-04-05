@@ -17,7 +17,7 @@ kramdown:
   input: GFM
 
 # Plugins
-gems: [jekyll-paginate, jekyll-sitemap]
+gems: [jekyll-paginate, jekyll-sitemap, jekyll-seo-tag]
 
 # Default content
 title:        "Eliezer Talón"
@@ -29,9 +29,14 @@ author:
   name:   "Eliezer Talón"
   url:    "https://twitter.com/elitalon"
   email:  "elitalon@gmail.com"
+  twitter: elitalon
 social_media:
   twitter:  "https://twitter.com/elitalon"
   linkedin: "https://ch.linkedin.com/in/elitalon"
+
+# SEO
+twitter:
+  username: elitalon
 
 # License
 license:
