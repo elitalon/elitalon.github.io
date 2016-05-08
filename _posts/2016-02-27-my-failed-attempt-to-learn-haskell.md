@@ -2,7 +2,7 @@
 title: My failed attempt to learn Haskell
 description: An unpleasant journey towards learning functional programming through Haskell
 ---
-A lot of attention was brought into functional programming when Swift [was announced in WWDC 2014](https://developer.apple.com/videos/play/wwdc2014/101/). But that wasn't really new. Trying to apply such concepts to other disciplines (e.g. object-oriented programming) has been a trend in general. But within the Apple ecosystem in particular, Swift made everyone to take it more seriously.
+A lot of attention was brought into functional programming when Swift [was announced in WWDC 2014](https://developer.apple.com/videos/play/wwdc2014/101/). But that wasn't really new. Trying to apply such concepts to other disciplines has been a trend in general. But within the Apple ecosystem in particular, Swift made everyone to take it more seriously.
 
 <!--more-->
 
@@ -12,7 +12,6 @@ Several months passed and I was comfortable writing a good amount of code in Swi
 
 
 ## Functional programming revival
-
 I decided to start by learning a new language that followed the functional paradigm. Like I said, I remembered the overall theory so I just needed to put that into practice again. Inspired by [Chris Eidhof](http://www.twitter.com/chriseidhof/) and [Natasha The Robot](https://www.natashatherobot.com/reading-functional-programming/), I chose [Haskell](https://www.haskell.org).
 
 Haskell is a general-purpose, purely functional programming language with strong static typing, type inference and lazy evaluation. Its weird syntax is definitely not what you are used to see with imperative languages. However, it's not [Lisp](https://en.wikipedia.org/wiki/Lisp_(programming_language)) either. From all the resources available, I went with these three:
@@ -29,7 +28,6 @@ Finally, I went ahead with "Learn You a Haskell for Great Good". This one is a g
 
 
 ## The problem with Haskell... Is not Haskell!
-
 I must admit that this journey wasn't fun at all (with the exception of "Haskell for Mac", maybe). I definitely have a deeper understanding of the language now. I learnt the concepts behind it, did a lot of exercises and revisited the theory to consolidate my knowledge. However, I cannot say that I'm able to write something meaningful. I have the feeling that I have failed miserably.
 
 But I don't think the problem here is the language itself. While I think Haskell isn't a beautiful language, a lot of thought has been put into its design. The techniques that it provides are really smart and elegant, maybe too smart sometimes. If I had to criticise something, I would say that:
@@ -41,4 +39,4 @@ The problem with Haskell is that it needs better communication and marketing. Th
 
 Haskell helped me understand better how Swift is designed and how Haskell itself, [Scala](http://www.scala-lang.org) and some other functional languages had an impact on it. When the Swift compiler makes something implicitly, I can see now where that comes from.
 
-While I don't see myself writing software in Haskell, it got me interested in learning more about functional programming. But Im going to take a different approach this time, though. I intend to learn [Erlang](http://www.erlang.org) and the applications of [OTP](https://en.wikipedia.org/wiki/Open_Telecom_Platform). And I'll start with [Elixir](http://elixir-lang.org), just for the sake of using a more familiar syntax for once.
+While I don't see myself writing software in Haskell, it got me interested in learning more about functional programming. But I'm going to take a different approach this time, though. I intend to learn [Erlang](http://www.erlang.org) and the applications of [OTP](https://en.wikipedia.org/wiki/Open_Telecom_Platform). And I'll start with [Elixir](http://elixir-lang.org), just for the sake of using a more familiar syntax for once.
