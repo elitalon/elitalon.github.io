@@ -24,7 +24,7 @@ If you do the math, it means that for every three Objective-C libraries there ar
 
 There might be several reasons for this trend but since I'm not a data analyst I'm not going to go into details. I'll just leave the numbers here to pique your curiosity.
 
-What I would like to do is share a journey that I went through while looking for a library to parse JSON in GPX. This will serve as an excuse for sharing a few tips about sustainable development, specifically about how to deal with third-party libraries. It won’t be cutting-edge, but I also think that it would be a good idea to [stay away from the hype](https://medium.freecodecamp.com/being-a-developer-after-40-3c5dd112210c) and _**revise**_ how we are solving problems in Swift with a bit of perspective.
+What I would like to do is share a journey that I went through while looking for a library to parse JSON in GPX. This will serve as an excuse for sharing a few tips about sustainable development, specifically about how to deal with third-party libraries. It won’t be cutting-edge, but I also think that it would be a good idea to [stay away from the hype](https://medium.freecodecamp.com/being-a-developer-after-40-3c5dd112210c) and consider how we are solving problems in Swift with a bit of perspective.
 
 Before we continue, let me clarify the terminology we will use:
 
@@ -36,7 +36,7 @@ Before we continue, let me clarify the terminology we will use:
 Let's start with a brief summary on what is JSON and how we’ve been using it on Apple's platforms.
 
 ### When, why and how JSON was born
-JSON was popularised by [Douglas Crockford](http://crockford.com) in 2001 as a format to transmit data between programs. It was developed as a subset of the JavaScript syntax defined in (~~the standard~~) [ECMA-262](http://www.ecma-international.org/publications/standards/Ecma-262.htm). Intended to be a replacement for the complexity of XML, it quickly gained adoption because of its simplicity. You can [listen to the story](https://www.youtube.com/watch?v=kc8BAR7SHJI) by the man himself.
+JSON was popularised by [Douglas Crockford](http://crockford.com) in 2001 as a format to transmit data between programs. It was developed as a subset of the JavaScript syntax defined in the [ECMA-262](http://www.ecma-international.org/publications/standards/Ecma-262.htm) standard. Intended to be a replacement for the complexity of XML, it quickly gained adoption because of its simplicity. You can [listen to the story](https://www.youtube.com/watch?v=kc8BAR7SHJI) by the man himself.
 
 So despite what a lot of people think, (there is actually a JSON standard/JSON has been standardized):
 
@@ -52,7 +52,7 @@ Are there any alternatives to JSON for transmitting data? The answer to this que
 * Go back to [XML](https://en.wikipedia.org/wiki/XML), but I guess that’s not really an option.
 * Use [YAML](http://yaml.org), but it also its own issues.
 * Use [MessagePack](https://en.wikipedia.org/wiki/MessagePack), which is closely related to JSON and somewhat more performant.
-* Go for [FlatBuffers](https://google.github.io/flatbuffers/index.html), which is a entirely different concept.
+* Go for [FlatBuffers](https://google.github.io/flatbuffers/index.html), which is an entirely different concept.
 
 These are only some well-known examples, there are plenty of options out there. Some of them might be more performant, but most of them don't have native support in either Objective-C or Swift. Thus, the complexity they add to the code doesn't make them worthwhile. MessagePack is maybe the only format that I would really consider as a replacement, because the syntax is roughly the same but the performance is a little bit better. [Mention trade-off between plain-text/binary wire formats?]
 
@@ -71,7 +71,7 @@ The documentation also states an important limitation regarding the latest JSON 
 
 > *The top level object is either an `NSArray` or an `NSDictionary`.*
 
-This is an interesting limitation, because the standard [^ only as of [RFC 7518 §2](https://tools.ietf.org/html/rfc7158#section-2)] actually allows any JSON value as a top-level root object. And there is also an important advice:
+This is an interesting limitation, because the standard [^ only as of [RFC 7518 §2](https://tools.ietf.org/html/rfc7158#section-2)] actually allows any JSON value as a top-level root object. And there is also an important piece of advice:
 
 > *Other rules may apply. Calling `isValidJSONObject:` or attempting a conversion are the definitive ways to tell if a given object can be converted to JSON data.*
 
@@ -84,7 +84,7 @@ This lack of support of the latest standard is probably the fundamental reason t
 By reading the standard we can see that JSON is a fairly simple format. What’s wrong with it then? Why do we have such proliferation of libraries for Swift, attempting to provide the definitive way of doing something that simple? Bear with me and let’s propose a few hypothesis on that.
 
 ### 1. Limited support in Swift
-The first reason could be the limited support that Swift offers. If you think about it, parsing JSON in Objective-C is easier thanks to reflection and Key Value Coding. [Mantle](https://github.com/Mantle/Mantle) and [OSReflectionKit](https://github.com/iAOS/OSReflectionKit) are two good examples of how these language/runtime features are used.
+The first reason could be the limited support that Swift offers. If you think about it, parsing JSON in Objective-C is easier thanks to reflection and Key Value Coding. [Mantle](https://github.com/Mantle/Mantle) and [OSReflectionKit](https://github.com/iAOS/OSReflectionKit) are two good examples of how these language and runtime features are used.
 
 Swift on the other hand has limited support for reflection. There are some protocols like [CustomReflectable](https://developer.apple.com/library/ios/documentation/Swift/Reference/Swift_CustomReflectable_Protocol/index.html) and the [Mirror](https://developer.apple.com/library/ios/documentation/Swift/Reference/Swift_Mirror_Structure/index.html#//apple_ref/swift/struct/s:Vs6Mirror) type. But still, it doesn’t have the dynamism of Objective-C.
 
