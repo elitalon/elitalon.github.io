@@ -2,7 +2,7 @@
 title: What nobody will tell you about JSON
 description: Edited transcription of "What nobody will tell you about JSON", a talk I gave for App Builders Zürich.
 ---
-This is an edited transcription of [a talk](http://www.meetup.com/App-Builders-Zurich/events/231739951) I did for [App Builders Zürich](http://www.meetup.com/App-Builders-Zurich/) on July 2016. I have arranged the content in a different way and omitted some parts to make the written version more coherent.
+This is an edited transcription of [a talk](http://www.meetup.com/App-Builders-Zurich/events/231739951) I did for [App Builders Zürich](http://www.meetup.com/App-Builders-Zurich/) on July 2016. I have arranged the content in a different way and omitted some parts to make the written version more coherent. The slides are also [available in PDF]({{ site.url }}/files/what_nobody_will_tell_you_about_json.pdf).
 
 <!--more-->
 
