@@ -18,7 +18,7 @@ At the time of this writing, these are the number of GitHub repositories mention
 * [Objective-C](https://github.com/search?utf8=✓&q=JSON+parsing+OR+decoding+fork%3Afalse+language%3AObjective-C&type=Repositories): 1611 results.
 * [Swift](https://github.com/search?utf8=✓&q=JSON+parsing+OR+decoding+fork%3Afalse+language%3ASwift&type=Repositories): 1038 results.
 
-If you do the math, it means that for every three Objective-C libraries there are almost two Swift libraries. That seems to (mirror/match) a similar trend in the Apple ecosystem in general, as [pointed out by Orta Therox](https://twitter.com/orta/status/748139249074053120):
+If you do the math, it means that for every three Objective-C libraries there are almost two Swift libraries. That seems to mirror a similar trend in the Apple ecosystem in general, as [pointed out by Orta Therox](https://twitter.com/orta/status/748139249074053120):
 
 > *Looks like in the last month for every 4 Obj-C libraries, there are 3 Swift libraries.*
 
@@ -38,11 +38,11 @@ Let's start with a brief summary on what is JSON and how we’ve been using it o
 ### When, why and how JSON was born
 JSON was popularised by [Douglas Crockford](http://crockford.com) in 2001 as a format to transmit data between programs. It was developed as a subset of the JavaScript syntax defined in the [ECMA-262](http://www.ecma-international.org/publications/standards/Ecma-262.htm) standard. Intended to be a replacement for the complexity of XML, it quickly gained adoption because of its simplicity. You can [listen to the story](https://www.youtube.com/watch?v=kc8BAR7SHJI) by the man himself.
 
-So despite what a lot of people think, (there is actually a JSON standard/JSON has been standardized):
+So despite what a lot of people think, JSON has been standardized:
 
 * [RFC 4627](https://tools.ietf.org/html/rfc4627), written by Douglas Crockford on 2006. He basically formalised the syntax that was originally published in [json.org](http://json.org) in 2002.
 * [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf), released in 2013. _*The standard was officially defined*_, consolidating the syntax for producing JSON text.
-* [RFC 7158](https://tools.ietf.org/html/rfc7158) and [RFC 7159](https://tools.ietf.org/html/rfc7159), released on 2013 and 2014 respectively. These clarified and proposed a set of best practices to avoid interoperability problems. [^RFC 7159 obsoletes 7158&4627]
+* [RFC 7158](https://tools.ietf.org/html/rfc7158) and [RFC 7159](https://tools.ietf.org/html/rfc7159), released on 2013 and 2014 respectively (note that RFC 7159 obsoletes both 7158 and 4627). These clarified and proposed a set of best practices to avoid interoperability problems.
 
 The syntax specification is the same in all documents. The only difference is that the RFCs go a little bit further by including operational aspects, like the reserved MIME type (`application/json`) or the preferred text encoding (UTF-8).
 
@@ -54,7 +54,9 @@ Are there any alternatives to JSON for transmitting data? The answer to this que
 * Use [MessagePack](https://en.wikipedia.org/wiki/MessagePack), which is closely related to JSON and somewhat more performant.
 * Go for [FlatBuffers](https://google.github.io/flatbuffers/index.html), which is an entirely different concept.
 
-These are only some well-known examples, there are plenty of options out there. Some of them might be more performant, but most of them don't have native support in either Objective-C or Swift. Thus, the complexity they add to the code doesn't make them worthwhile. MessagePack is maybe the only format that I would really consider as a replacement, because the syntax is roughly the same but the performance is a little bit better. [Mention trade-off between plain-text/binary wire formats?]
+These are only some well-known examples, there are plenty of options out there. Some of them might be more performant, but most of them don't have native support in either Objective-C or Swift. Thus, the complexity they add to the code doesn't make them worthwhile.
+
+MessagePack is maybe the only format that I would really consider as a replacement, because the syntax is roughly the same but the performance is a little bit better. In general, binary formats are better options when data size is a problem. They are also more flexible, allowing to transmit binary data (e.g. images) or non UTF-8 strings without any additional conversion.
 
 
 ## Which tools does Apple give us?
@@ -71,13 +73,13 @@ The documentation also states an important limitation regarding the latest JSON 
 
 > *The top level object is either an `NSArray` or an `NSDictionary`.*
 
-This is an interesting limitation, because the standard [^ only as of [RFC 7518 §2](https://tools.ietf.org/html/rfc7158#section-2)] actually allows any JSON value as a top-level root object. And there is also an important piece of advice:
+This is an interesting limitation, because as of [RFC 7518 §2](https://tools.ietf.org/html/rfc7158#section-2) the standard allows any JSON value as a top-level root object. And there is also an important piece of advice:
 
 > *Other rules may apply. Calling `isValidJSONObject:` or attempting a conversion are the definitive ways to tell if a given object can be converted to JSON data.*
 
 I couldn't find which "other rules" they refer to. So on the event of unexpected behaviour we have to use `isValidJSONObject:` to debug.
 
-This lack of support of the latest standard is probably the fundamental reason that justifies writing an alternative JSON serialiser. Although, to be honest, I have rarely found myself receiving a JSON object where the top-level object was not a dictionary or an array. ([See attached screenshots, `public static var allowFragments: JSONSerialization.ReadingOptions { get }`])
+This lack of support of the latest standard is probably the fundamental reason that justifies writing an alternative JSON serialiser. Although, to be honest, I have rarely found myself receiving a JSON object where the top-level object was not a dictionary or an array. In any case, passing the `.AllowFragments` option disables this limitation (thanks to [@flufffel](https://twitter.com/flufffel) for pointing this out).
 
 
 ## What's wrong with parsing JSON?
@@ -181,8 +183,7 @@ With all due respect, my answer to that is this quote from a [Nick O’Neill's t
 
 > *Not every piece of clever code is a great pattern.*
 
-[^ I would give benefit of the doubt here to a library first written for Swift 1 when http://chris.eidhof.nl/post/json-parsing-in-swift/ was one of the first Swifty approaches https://github.com/thoughtbot/Argo/commit/f5b5973ae5ff2473fdc8d2a75b5567e6f79513ec]
-
+It is true though that this library was written for Swift 1, when everybody was experimenting and [taking the functional aspects of Swift to the limit](http://chris.eidhof.nl/post/json-parsing-in-swift/). So I can understand why they took this approach.
 
 ### 3. ObjectMapper
 Let's continue with [ObjectMapper](https://github.com/Hearst-DD/ObjectMapper), by [Hearst](http://www.hearst.com). Here is an example on how to parse data:
