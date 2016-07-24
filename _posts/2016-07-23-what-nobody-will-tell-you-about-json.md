@@ -1,15 +1,15 @@
 ---
 title: What nobody will tell you about JSON
-description: Edited transcription of "What nobody will tell you about JSON", a talk I gave for App Builders Zürich.
+description: Edited transcript of "What nobody will tell you about JSON", a talk I gave at App Builders Zürich.
 ---
-This is an edited transcription of [a talk](http://www.meetup.com/App-Builders-Zurich/events/231739951) I did for [App Builders Zürich](http://www.meetup.com/App-Builders-Zurich/) on July 2016. I have arranged the content in a different way and omitted some parts to make the written version more coherent.
+This is an edited transcript of [a talk](http://www.meetup.com/App-Builders-Zurich/events/231739951) I gave at [App Builders Zürich](http://www.meetup.com/App-Builders-Zurich/) on July 2016. I have arranged the content in a different way and omitted some parts to make the written version more coherent.
 
 <!--more-->
 
 ---
 
 ## Motivation
-Back in February, the mobile team at [FIFA TMS](https://www.fifatms.com) had to develop a new feature for [GPX](https://www.fifatms.com/gpx/). The application was written in Objective-C at that time, but this new feature was pretty much isolated from the rest of the code. The only shared components were an HTTP client to fetch data from back-end, an style guide and some small helpers. We decided to implement it in Swift, because we would not need to [mix and match](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html) both languages too much.
+Back in February, the mobile team at [FIFA TMS](https://www.fifatms.com) (was asked) to develop a new feature for [GPX](https://www.fifatms.com/gpx/). The application was written in Objective-C at that time, but this new feature was pretty much isolated from the rest of the code. The only shared components were an HTTP client to fetch data from back-end, a style guide and some small helpers. We decided to implement it in Swift, because we would not need to [mix and match](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html) both languages too much.
 
 One of the decisions that we had to make was how to parse back-end responses. We didn’t want to reinvent the wheel, so we started looking at existing solutions. That led us to discover some interesting facts about third-party libraries in Swift, in particular for parsing JSON.
 
@@ -18,13 +18,13 @@ At the time of this writing, these are the number of GitHub repositories mention
 * [Objective-C](https://github.com/search?utf8=✓&q=JSON+parsing+OR+decoding+fork%3Afalse+language%3AObjective-C&type=Repositories): 1611 results.
 * [Swift](https://github.com/search?utf8=✓&q=JSON+parsing+OR+decoding+fork%3Afalse+language%3ASwift&type=Repositories): 1038 results.
 
-If you do the math, it means that for every three Objective-C libraries there are almost two Swift libraries. That seems to mimic a similar trend in the Apple ecosystem in general, as [pointed out by Orta Therox](https://twitter.com/orta/status/748139249074053120):
+If you do the math, it means that for every three Objective-C libraries there are almost two Swift libraries. That seems to (mirror/match) a similar trend in the Apple ecosystem in general, as [pointed out by Orta Therox](https://twitter.com/orta/status/748139249074053120):
 
 > *Looks like in the last month for every 4 Obj-C libraries, there are 3 Swift libraries.*
 
-There might be several reasons for this trend but since I'm not a data analyst I'm not going to go into details. I'll just leave the numbers here to pick your curiosity.
+There might be several reasons for this trend but since I'm not a data analyst I'm not going to go into details. I'll just leave the numbers here to pique your curiosity.
 
-What I would like to do is share a journey that I went through while looking for a library to parse JSON in GPX. This will serve as an excuse for sharing a few tips about sustainable development, specifically about how to deal with third-party libraries. It won’t be cutting-edge, but I also think that it would be a good idea to [stay away from the hype](https://medium.freecodecamp.com/being-a-developer-after-40-3c5dd112210c) and revise how we are solving problems in Swift with a bit of perspective.
+What I would like to do is share a journey that I went through while looking for a library to parse JSON in GPX. This will serve as an excuse for sharing a few tips about sustainable development, specifically about how to deal with third-party libraries. It won’t be cutting-edge, but I also think that it would be a good idea to [stay away from the hype](https://medium.freecodecamp.com/being-a-developer-after-40-3c5dd112210c) and _**revise**_ how we are solving problems in Swift with a bit of perspective.
 
 Before we continue, let me clarify the terminology we will use:
 
@@ -33,16 +33,16 @@ Before we continue, let me clarify the terminology we will use:
 
 
 ## JSON demystified
-Let's start with a brief summary on what is JSON and how we’ve been using it on Apple platforms.
+Let's start with a brief summary on what is JSON and how we’ve been using it on Apple's platforms.
 
 ### When, why and how JSON was born
-JSON was popularised by [Douglas Crockford](http://crockford.com) in 2001 as a format to transmit data between programs. It was developed as a subset of the JavaScript-based syntax defined in the standard [ECMA-262](http://www.ecma-international.org/publications/standards/Ecma-262.htm). Intended to be a replacement for the complexity of XML, it quickly gained adoption because of its simplicity. You can [listen to the story](https://www.youtube.com/watch?v=kc8BAR7SHJI) by the man himself.
+JSON was popularised by [Douglas Crockford](http://crockford.com) in 2001 as a format to transmit data between programs. It was developed as a subset of the JavaScript syntax defined in (~~the standard~~) [ECMA-262](http://www.ecma-international.org/publications/standards/Ecma-262.htm). Intended to be a replacement for the complexity of XML, it quickly gained adoption because of its simplicity. You can [listen to the story](https://www.youtube.com/watch?v=kc8BAR7SHJI) by the man himself.
 
-So despite what a lot of people think, there is actually a JSON standard:
+So despite what a lot of people think, (there is actually a JSON standard/JSON has been standardized):
 
 * [RFC 4627](https://tools.ietf.org/html/rfc4627), written by Douglas Crockford on 2006. He basically formalised the syntax that was originally published in [json.org](http://json.org) in 2002.
-* [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf), released on 2013. The standard was officially defined, consolidating the syntax for producing JSON text.
-* [RFC 7158](https://tools.ietf.org/html/rfc7158) and [RFC 7159](https://tools.ietf.org/html/rfc7159), released on 2013 and 2014 respectively. It clarified and proposed a set of best practices to avoid interoperability problems.
+* [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf), released in 2013. _*The standard was officially defined*_, consolidating the syntax for producing JSON text.
+* [RFC 7158](https://tools.ietf.org/html/rfc7158) and [RFC 7159](https://tools.ietf.org/html/rfc7159), released on 2013 and 2014 respectively. These clarified and proposed a set of best practices to avoid interoperability problems. [^RFC 7159 obsoletes 7158&4627]
 
 The syntax specification is the same in all documents. The only difference is that the RFCs go a little bit further by including operational aspects, like the reserved MIME type (`application/json`) or the preferred text encoding (UTF-8).
 
@@ -52,9 +52,9 @@ Are there any alternatives to JSON for transmitting data? The answer to this que
 * Go back to [XML](https://en.wikipedia.org/wiki/XML), but I guess that’s not really an option.
 * Use [YAML](http://yaml.org), but it also its own issues.
 * Use [MessagePack](https://en.wikipedia.org/wiki/MessagePack), which is closely related to JSON and somewhat more performant.
-* Go for [FlatBuffers](https://google.github.io/flatbuffers/index.html), which is a whole different concept.
+* Go for [FlatBuffers](https://google.github.io/flatbuffers/index.html), which is a entirely different concept.
 
-These are only some well-known examples, there are plenty of options out there. Some of them might be more performant, but most of them don't have native support in either Objective-C or Swift. Thus, the complexity they add to the code doesn't make them worthy. MessagePack is maybe the only format that I would really consider as a replacement, because the syntax is roughly the same but the performance is a little bit better.
+These are only some well-known examples, there are plenty of options out there. Some of them might be more performant, but most of them don't have native support in either Objective-C or Swift. Thus, the complexity they add to the code doesn't make them worthwhile. MessagePack is maybe the only format that I would really consider as a replacement, because the syntax is roughly the same but the performance is a little bit better. [Mention trade-off between plain-text/binary wire formats?]
 
 
 ## Which tools does Apple give us?
@@ -71,20 +71,20 @@ The documentation also states an important limitation regarding the latest JSON 
 
 > *The top level object is either an `NSArray` or an `NSDictionary`.*
 
-This is an interesting one, because the standard actually allows any JSON value as a top-level root object. And there is also an important advice:
+This is an interesting limitation, because the standard [^ only as of [RFC 7518 §2](https://tools.ietf.org/html/rfc7158#section-2)] actually allows any JSON value as a top-level root object. And there is also an important advice:
 
 > *Other rules may apply. Calling `isValidJSONObject:` or attempting a conversion are the definitive ways to tell if a given object can be converted to JSON data.*
 
 I couldn't find which "other rules" they refer to ¯\\_(ツ)\_/¯. So on the event of unexpected behaviour we have to use `isValidJSONObject:` to debug.
 
-This lack of support of the latest standard is probably the fundamental reason that justifies writing an alternative JSON serialiser. Although, to be honest, I have rarely found myself receiving a JSON object where the top-level object was not a dictionary or an array.
+This lack of support of the latest standard is probably the fundamental reason that justifies writing an alternative JSON serialiser. Although, to be honest, I have rarely found myself receiving a JSON object where the top-level object was not a dictionary or an array. ([See attached screenshots, `public static var allowFragments: JSONSerialization.ReadingOptions { get }`])
 
 
 ## What's wrong with parsing JSON?
 By reading the standard we can see that JSON is a fairly simple format. What’s wrong with it then? Why do we have such proliferation of libraries for Swift, attempting to provide the definitive way of doing something that simple? Bear with me and let’s propose a few hypothesis on that.
 
 ### 1. Limited support in Swift
-The first reason could be the limited support that Swift offers. If you think about it, parsing JSON in Objective-C is easier thanks to reflection and Key Value Coding. [Mantle](https://github.com/Mantle/Mantle) and [OSReflectionKit](https://github.com/iAOS/OSReflectionKit) are two good examples of it.
+The first reason could be the limited support that Swift offers. If you think about it, parsing JSON in Objective-C is easier thanks to reflection and Key Value Coding. [Mantle](https://github.com/Mantle/Mantle) and [OSReflectionKit](https://github.com/iAOS/OSReflectionKit) are two good examples of how these language/runtime features are used.
 
 Swift on the other hand has limited support for reflection. There are some protocols like [CustomReflectable](https://developer.apple.com/library/ios/documentation/Swift/Reference/Swift_CustomReflectable_Protocol/index.html) and the [Mirror](https://developer.apple.com/library/ios/documentation/Swift/Reference/Swift_Mirror_Structure/index.html#//apple_ref/swift/struct/s:Vs6Mirror) type. But still, it doesn’t have the dynamism of Objective-C.
 
@@ -119,7 +119,7 @@ do {
 }
 ```
 
-The first thing to note here is that `json` is initialised with an `NSData` object. Freddy implements its own deserialiser, so we can skip `NSJSONSerialization` altogether. While they claim that is faster, one disadvantage is that we cannot use the default serialisers of some famous HTTP clients (e.g. [Alamofire](https://github.com/Alamofire/Alamofire/blob/2501fc92eaf2d4e6d0b316d8fb5bb2eb41311f86/Source/ResponseSerialization.swift#L290)). So this library looked great, but in return we had to extend our HTTP client to replace `NSJSONSerialization` with something else.
+The first thing to note here is that `json` is initialised with an `NSData` object. Freddy implements its own deserialiser, so we can skip `NSJSONSerialization` altogether. While they claim that is faster, one disadvantage is that we cannot use the default serialisers of some popular HTTP clients (e.g. [Alamofire](https://github.com/Alamofire/Alamofire/blob/2501fc92eaf2d4e6d0b316d8fb5bb2eb41311f86/Source/ResponseSerialization.swift#L290)). So this library looked great, but in exchange we had to extend our HTTP client to replace `NSJSONSerialization` with something else.
 
 Populating models with a JSON object is possible with a protocol. This approach is really common in many libraries out there:
 
@@ -137,7 +137,7 @@ extension Person: JSONDecodable {
 }
 ```
 
-Note that we have to use a specific method for every data type. I think this is redundant, because there's no much difference with `value["name"] as? String`. On the other hand, having all the error handling internally comes in handy.
+Note that we have to use a specific method for every data type. I think this is redundant, because there's not much difference compared with `value["name"] as? String`. On the other hand, having all the error handling internally comes in handy.
 
 ### 2. Argo
 Then we tried [Argo](https://github.com/thoughtbot/Argo), from [Thoughtbot](https://thoughtbot.com). This library uses currying heavily, so we actually have to import two libraries: Argo and [Curry](https://github.com/thoughtbot/Curry). Here is an example on how to parse data:
@@ -181,6 +181,9 @@ With all due respect, my answer to that is this quote from a [Nick O’Neill's t
 
 > *Not every piece of clever code is a great pattern.*
 
+[^ I would give benefit of the doubt here to a library first written for Swift 1 when http://chris.eidhof.nl/post/json-parsing-in-swift/ was one of the first Swifty approaches https://github.com/thoughtbot/Argo/commit/f5b5973ae5ff2473fdc8d2a75b5567e6f79513ec]
+
+
 ### 3. ObjectMapper
 Let's continue with [ObjectMapper](https://github.com/Hearst-DD/ObjectMapper), by [Hearst](http://www.hearst.com). Here is an example on how to parse data:
 
@@ -206,7 +209,7 @@ This library also uses custom operators, but at least they're more intuitive and
 
 But the biggest disadvantage is that it forces us to use mutable properties on a model. That's because they decided to implement parsing as an operation that occurs after initialising an object.
 
-This approach works really well if we are dealing with Core Data objects, which are inherently mutable. But for the rest of cases, the safety net of the Swift compiler is just out of the window.
+This approach works really well if we are dealing with Core Data objects, which are inherently mutable. But for the rest of cases, the safety net of the Swift compiler is just thrown out of the window.
 
 ### 4. SwiftyJSON
 The next candidate is [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON). Here is an example on how to parse data with it:
@@ -262,7 +265,7 @@ let person: Person = try Unbox(dictionary)
 
 With Unbox we can keep our objects immutable, we make use of type inference to avoid being explicit with the data types and we can use plain dictionaries as well. You can see how better is this library just by comparing the amount of code needed, yet remaining simple and easy to read.
 
-But there's still one small drawback: we have to depend on the `Unbox` function, the `Unboxable` protocol and the `Unboxer` type. And we wanted to keep our interfaces free from foreign types.
+But there's still one small drawback: we have to depend on the `Unbox` function, the `Unboxable` protocol and the `Unboxer` type. And we wanted to keep our interfaces free from third-party types.
 
 ### 6. Our own parser
 So after trying all these libraries we became really frustrated. None of them offered us exactly what we were looking for.
@@ -348,7 +351,7 @@ We saw that `NSJSONSerialization` is limiting and does not fulfil the standard c
 #### 2. Strive for simple solutions to simple problems.
 We have learnt that a deeper knowledge of the language gave us new possibilities. Our JSON parser is really simple. With less than 200 hundred lines we covered all of our cases, including error handling and providing default values in case of errors.
 
-We could’ve given up and patch our code base to make it work with one of the libraries we tried. But we kept looking and learning until we found the simplest possible solution. My advise here would be to think it twice before adding third-party code to solve a simple problem, because probably [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it).
+We could’ve given up and patched our code base to make it work with one of the libraries we tried. But we kept looking and learning until we found the simplest possible solution. My advise here would be to think it twice before adding third-party code to solve a simple problem, because probably [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it).
 
 #### 3. Stay as close as possible to an evolving platform
 Swift is evolving fast and things break often. And with [Swift 3](http://oleb.net/blog/2016/06/swift-3/) this is going to be really painful. So it’s really convenient to keep our interfaces simple and independent from external components.
