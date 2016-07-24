@@ -2,7 +2,7 @@
 title: What nobody will tell you about JSON
 description: Edited transcript of "What nobody will tell you about JSON", a talk I gave at App Builders Zürich.
 ---
-This is an edited transcript of [a talk](http://www.meetup.com/App-Builders-Zurich/events/231739951) I gave at [App Builders Zürich](http://www.meetup.com/App-Builders-Zurich/) on July 2016. I have arranged the content in a different way and omitted some parts to make the written version more coherent.
+This is an edited transcript of [a talk](http://www.meetup.com/App-Builders-Zurich/events/231739951) I gave at [App Builders Zürich](http://www.meetup.com/App-Builders-Zurich/) on July 2016. I have arranged the content in a different way and omitted some parts to make the written version more coherent. The slides are also [available in PDF]({{ site.url }}/files/what_nobody_will_tell_you_about_json.pdf).
 
 <!--more-->
 
@@ -75,7 +75,7 @@ This is an interesting limitation, because the standard [^ only as of [RFC 7518 
 
 > *Other rules may apply. Calling `isValidJSONObject:` or attempting a conversion are the definitive ways to tell if a given object can be converted to JSON data.*
 
-I couldn't find which "other rules" they refer to ¯\\_(ツ)\_/¯. So on the event of unexpected behaviour we have to use `isValidJSONObject:` to debug.
+I couldn't find which "other rules" they refer to. So on the event of unexpected behaviour we have to use `isValidJSONObject:` to debug.
 
 This lack of support of the latest standard is probably the fundamental reason that justifies writing an alternative JSON serialiser. Although, to be honest, I have rarely found myself receiving a JSON object where the top-level object was not a dictionary or an array. ([See attached screenshots, `public static var allowFragments: JSONSerialization.ReadingOptions { get }`])
 
