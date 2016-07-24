@@ -75,7 +75,7 @@ This is an interesting one, because the standard actually allows any JSON value 
 
 > *Other rules may apply. Calling `isValidJSONObject:` or attempting a conversion are the definitive ways to tell if a given object can be converted to JSON data.*
 
-I couldn't find which "other rules" they refer to ¯\\_(ツ)\_/¯. So on the event of unexpected behaviour we have to use `isValidJSONObject:` to debug.
+I couldn't find which "other rules" they refer to. So on the event of unexpected behaviour we have to use `isValidJSONObject:` to debug.
 
 This lack of support of the latest standard is probably the fundamental reason that justifies writing an alternative JSON serialiser. Although, to be honest, I have rarely found myself receiving a JSON object where the top-level object was not a dictionary or an array.
 
