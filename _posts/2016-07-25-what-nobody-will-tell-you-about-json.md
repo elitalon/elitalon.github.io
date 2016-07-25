@@ -50,13 +50,13 @@ The syntax specification is the same in all documents. The only difference is th
 Are there any alternatives to JSON for transmitting data? The answer to this question is a bit tricky. There are alternatives indeed, but one of the keys for the success of JSON has been its simplicity. With that in mind we could:
 
 * Go back to [XML](https://en.wikipedia.org/wiki/XML), but I guess that’s not really an option.
-* Use [YAML](http://yaml.org), but it also its own issues.
+* Use [YAML](http://yaml.org), but it also has its own issues.
 * Use [MessagePack](https://en.wikipedia.org/wiki/MessagePack), which is closely related to JSON and somewhat more performant.
 * Go for [FlatBuffers](https://google.github.io/flatbuffers/index.html), which is an entirely different concept.
 
 These are only some well-known examples, there are plenty of options out there. Some of them might be more performant, but most of them don't have native support in either Objective-C or Swift. Thus, the complexity they add to the code doesn't make them worthwhile.
 
-MessagePack is maybe the only format that I would really consider as a replacement, because the syntax is roughly the same but the performance is a little bit better. In general, binary formats are better options when data size is a problem. They are also more flexible, allowing to transmit binary data (e.g. images) or non UTF-8 strings without any additional conversion.
+MessagePack is maybe the only format that I would really consider as a replacement, because the syntax is roughly the same but the performance is a little bit better. In general, binary formats are a better option when data size is a problem. They are also more flexible, allowing to transmit binary data (e.g. images) or non UTF-8 strings without any additional conversion.
 
 
 ## Which tools does Apple give us?
