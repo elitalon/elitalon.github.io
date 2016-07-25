@@ -9,7 +9,7 @@ This is an edited transcript of [a talk](http://www.meetup.com/App-Builders-Zuri
 ---
 
 ## Motivation
-Back in February, the mobile team at [FIFA TMS](https://www.fifatms.com) (was asked) to develop a new feature for [GPX](https://www.fifatms.com/gpx/). The application was written in Objective-C at that time, but this new feature was pretty much isolated from the rest of the code. The only shared components were an HTTP client to fetch data from back-end, a style guide and some small helpers. We decided to implement it in Swift, because we would not need to [mix and match](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html) both languages too much.
+Back in February, the mobile team at [FIFA TMS](https://www.fifatms.com) was asked to develop a new feature for [GPX](https://www.fifatms.com/gpx/). The application was written in Objective-C at that time, but this new feature was pretty much isolated from the rest of the code. The only shared components were an HTTP client to fetch data from back-end, a style guide and some small helpers. We decided to implement it in Swift, because we would not need to [mix and match](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html) both languages too much.
 
 One of the decisions that we had to make was how to parse back-end responses. We didn’t want to reinvent the wheel, so we started looking at existing solutions. That led us to discover some interesting facts about third-party libraries in Swift, in particular for parsing JSON.
 
@@ -38,10 +38,10 @@ Let's start with a brief summary on what is JSON and how we’ve been using it o
 ### When, why and how JSON was born
 JSON was popularised by [Douglas Crockford](http://crockford.com) in 2001 as a format to transmit data between programs. It was developed as a subset of the JavaScript syntax defined in the [ECMA-262](http://www.ecma-international.org/publications/standards/Ecma-262.htm) standard. Intended to be a replacement for the complexity of XML, it quickly gained adoption because of its simplicity. You can [listen to the story](https://www.youtube.com/watch?v=kc8BAR7SHJI) by the man himself.
 
-So despite what a lot of people think, JSON has been standardized:
+So despite what a lot of people think, JSON has been standardised:
 
 * [RFC 4627](https://tools.ietf.org/html/rfc4627), written by Douglas Crockford on 2006. He basically formalised the syntax that was originally published in [json.org](http://json.org) in 2002.
-* [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf), released in 2013. _*The standard was officially defined*_, consolidating the syntax for producing JSON text.
+* [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf), released in 2013. The standard was officially defined, consolidating the syntax for producing JSON text.
 * [RFC 7158](https://tools.ietf.org/html/rfc7158) and [RFC 7159](https://tools.ietf.org/html/rfc7159), released on 2013 and 2014 respectively (note that RFC 7159 obsoletes both 7158 and 4627). These clarified and proposed a set of best practices to avoid interoperability problems.
 
 The syntax specification is the same in all documents. The only difference is that the RFCs go a little bit further by including operational aspects, like the reserved MIME type (`application/json`) or the preferred text encoding (UTF-8).
