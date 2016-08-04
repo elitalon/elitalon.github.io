@@ -244,7 +244,7 @@ SwiftyJSON starts to look like a decent solution. To begin with, we don't need a
 But this library still has one issue, the same as Freddy: we have to be explicit with the type of the objects we are trying to fetch. It seems to me that we could use some type inference here. Moreover, error handling might become really verbose as shown in this particular example.
 
 ### 5. Unbox
-So finally, the last library we tried: [Unbox](https://github.com/JohnSundell/Unbox), by [John Sundell](). I have to admit that this one is my favourite by far, kudos to John for this fantastic tool. This is how you can parse JSON with Unbox:
+So finally, the last library we tried: [Unbox](https://github.com/JohnSundell/Unbox), by [John Sundell](https://twitter.com/johnsundell). I have to admit that this one is my favourite by far, kudos to John for this fantastic tool. This is how you can parse JSON with Unbox:
 
 ```swift
 import Unbox
