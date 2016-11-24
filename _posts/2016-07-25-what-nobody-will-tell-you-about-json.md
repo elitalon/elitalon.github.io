@@ -6,8 +6,6 @@ This is an edited transcript of [a talk](http://www.meetup.com/App-Builders-Zuri
 
 <!--more-->
 
----
-
 ## Motivation
 Back in February, the mobile team at [FIFA TMS](https://www.fifatms.com) was asked to develop a new feature for [GPX](https://www.fifatms.com/gpx/). The application was written in Objective-C at that time, but this new feature was pretty much isolated from the rest of the code. The only shared components were an HTTP client to fetch data from back-end, a style guide and some small helpers. We decided to implement it in Swift, because we would not need to [mix and match](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html) both languages too much.
 
