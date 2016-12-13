@@ -21,8 +21,8 @@ gems: [jekyll-paginate, jekyll-sitemap, jekyll-seo-tag]
 
 # Default content
 title:        "Eliezer Talón"
-tagline:      "iOS engineer living in Zürich"
-description:  "I am an iOS engineer, musician, runner, scuba diver and apprentice snowboarder. From Canary Islands, now living in Zürich. I write here mostly about software development."
+tagline:      "iOS developer"
+description:  "I am an software engineer from Canary Islands, working most of the time on iOS. Also a musician, runner, scuba diver and apprentice snowboarder. I write here mostly about software development."
 
 # About/contact
 author:
@@ -50,7 +50,7 @@ defaults:
     scope:
       path: ""
     values:
-      description: "Eliezer Talón – iOS engineer living in Zürich"
+      description: "Eliezer Talón – iOS developer"
   -
     scope:
       path: ""

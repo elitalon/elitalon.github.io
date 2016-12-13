@@ -2,7 +2,7 @@
 layout: page
 title: About
 ---
-Hi! My name is Eliezer and I live in Zürich, Switzerland.
+Hi! My name is Eliezer.
 
 I am a software engineer, working most of the times with iOS. I helped create [Cloquo](https://twitter.com/cloquo), [Fintonic](https://itunes.apple.com/es/app/fintonic-tus-finanzas-personales./id672220319?mt=8), [Sandbox](https://twitter.com/sandbox_network) and [Numbrs](https://itunes.apple.com/de/app/centralway-numbrs/id652918824?mt=8). When I am not coding, you can find me running, playing the guitar or improving my snowboarding skills. I used to go scuba diving a lot when I was still living in [Canary Islands](https://en.wikipedia.org/wiki/Canary_Islands) (did I mention I am originally from there?). Now I can only do it from time to time.
 
