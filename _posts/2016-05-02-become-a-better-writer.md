@@ -2,7 +2,7 @@
 title: Become a better writer
 description: A friendly reminder about the importance of good writing skills
 ---
-["Why Scrum Should Basically Just Die In A Fire"](https://archive.is/Rjqh0) is the title of an article written by [Giles Bowkett](https://twitter.com/gilesgoatboy) that caught my attention a few months ago. Among all the topics discussed, he suggested that the [Agile Manifesto](http://www.agilemanifesto.org/principles.html) principle about face-to-face communication *"might be to blame"* for inspiring Scrum's [daily stand-up](https://en.wikipedia.org/wiki/Scrum_(software_development)#Daily_scrum).
+["Why Scrum Should Basically Just Die In A Fire"](https://archive.is/Rjqh0) is the title of an article written by [Giles Bowkett](https://twitter.com/gilesgoatboy) that caught my attention a few months ago. Among all the topics discussed, he suggested that the [Agile Manifesto](http://www.agilemanifesto.org/principles.html) principle about face-to-face communication "might be to blame" for inspiring Scrum's [daily stand-up](https://en.wikipedia.org/wiki/Scrum_(software_development)#Daily_scrum).
 
 <!--more-->
 

@@ -26,8 +26,8 @@ What I would like to do is share a journey that I went through while looking for
 
 Before we continue, let me clarify the terminology we will use:
 
-* **Deserialising** (or *decoding*) is the operation that transforms binary data into a data structure that represents a JSON text (e.g `[String: AnyObject]` in Swift).
-* **Parsing** is the operation that fetches values from that data structure (e.g. querying a dictionary).
+* _Deserialising_ (or decoding) is the operation that transforms binary data into a data structure that represents a JSON text (e.g `[String: AnyObject]` in Swift).
+* _Parsing_ is the operation that fetches values from that data structure (e.g. querying a dictionary).
 
 
 ## JSON demystified
@@ -367,7 +367,7 @@ Now, I don’t want to discourage anyone from using third-party libraries at all
 #### 1. Constraints or prototyping
 If there are serious resource constraints or we are just simply building a prototype, an existing solution will do the job.
 
-But I want to emphasise here the word *"serious"*. Sometimes we fool ourselves into thinking that we don’t have enough time and we want to rush into code. And one month later we found that we have to review that design again because we jumped too fast into a solution. But if the constraints are real and unavoidable, go for it.
+But I want to emphasise here the word "serious". Sometimes we fool ourselves into thinking that we don’t have enough time and we want to rush into code. And one month later we found that we have to review that design again because we jumped too fast into a solution. But if the constraints are real and unavoidable, go for it.
 
 #### 2. Sometimes Apple doesn’t just work
 If for any reason we wanted to have full support of the standard, then our only choice would’ve been to use Freddy. And writing a deserialiser is a way more complex task compared with writing a simple parser. So in that case, using an external component would've been the right choice.
