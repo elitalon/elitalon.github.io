@@ -9,7 +9,7 @@ timezone: "Europe/Zurich"
 feed_url: "https://elitalon.github.io/feed.xml"
 
 # Build settings
-exclude: ['Gemfile', 'Gemfile.lock']
+exclude: ['Gemfile', 'Gemfile.lock', 'public/css/Paratype PT Sans Free Font License.txt']
 
 # Writing
 excerpt_separator:  <!--more-->
@@ -17,7 +17,7 @@ kramdown:
   input: GFM
 
 # Plugins
-gems: [jekyll-paginate, jekyll-sitemap, jekyll-seo-tag]
+plugins: [jekyll-paginate, jekyll-sitemap, jekyll-seo-tag]
 
 # Default content
 title:        "Eliezer Talón"
@@ -58,3 +58,19 @@ defaults:
     values:
       layout: "post"
       published: true
+
+web_fonts:
+  - ptsans_bold_macroman
+  - ptsans_bolditalic_macroman
+  - ptsans_italic_macroman
+  - ptsans_regular_macroman
+  - ptsanscaption_bold_macroman
+  - ptsanscaption_regular_macroman
+  - ptsansnarrow_bold_macroman
+  - ptsansnarrow_regular_macroman
+  - ptserif_bold_macroman
+  - ptserif_bolditalic_macroman
+  - ptserif_italic_macroman
+  - ptserif_regular_macroman
+  - ptserifcaption_italic_macroman
+  - ptserifcaption_regular_macroman
