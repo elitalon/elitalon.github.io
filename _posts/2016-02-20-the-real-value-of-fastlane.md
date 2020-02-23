@@ -10,7 +10,7 @@ We already had [nomad](https://github.com/nomad) and [xctool](https://github.com
 
 
 ## Cleaning a Makefile
-I usually include a [Makefile](https://www.gnu.org/software/make/manual/make.html#Introduction) with my iOS projects, where the *targets* are simply shortcuts to perform different tasks (see [an example](https://gist.github.com/elitalon/0f482d02e8fcaecf0da2)). Each target contains one or more *recipes* in order to complete a given task. For example, a *"deploy"* target may run the tests, create an [IPA](https://en.wikipedia.org/wiki/.ipa_(file_extension)) and send it somewhere via `curl`. Those targets can be easily triggered in a CI service.
+I usually include a [Makefile](https://www.gnu.org/software/make/manual/make.html#Introduction) with my iOS projects, where the *targets* are simply shortcuts to perform different tasks. Each target contains one or more *recipes* in order to complete a given task. For example, a *"deploy"* target may run the tests, create an [IPA](https://en.wikipedia.org/wiki/.ipa_(file_extension)) and send it somewhere via `curl`. Those targets can be easily triggered in a CI service.
 
 So I started replacing the recipes with the [iOS toolchain](https://github.com/fastlane/fastlane/blob/7aeb29aea2eb437f8c6bd79f9c657528f160a3d0/README.md#fastlane-toolchain) that fastlane provides. I often use [xcpretty](https://github.com/supermarin/xcpretty) to filter the output too, so I was able to clean up the initial Makefile a little bit. But still, it felt like I was simply replacing one set of tools with another.
 
@@ -30,4 +30,4 @@ For beginners, fastlane's toolchain provides an easy way of automating different
 
 However, for me the real value of fastlane lies in the ecosystem surrounding it. By offering a way to integrate additional actions, fastlane has rather become a framework that allows developers to implement really complex pipelines beyond the scope of the default tools.
 
-The only downside is that now the project has (another) dependency with a third-party tool, which is something I do not like. I'll keep a copy of my good old Makefile, just in case.
+The only downside is that now iOS projects have (another) dependency with a third-party tool, which is something I do not like. I'll keep a copy of my good old Makefile, just in case.
