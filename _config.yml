@@ -2,11 +2,11 @@
 permalink: pretty
 
 # Setup
-url:      "http://elitalon.com"
+url:      "https://elitalon.github.io"
 baseurl:  ""
 paginate: 5
 timezone: "Europe/Zurich"
-feed_url: "http://elitalon.com/feed.xml"
+feed_url: "https://elitalon.github.io/feed.xml"
 
 # Build settings
 exclude: ['Gemfile', 'Gemfile.lock']
@@ -22,7 +22,7 @@ gems: [jekyll-paginate, jekyll-sitemap, jekyll-seo-tag]
 # Default content
 title:        "Eliezer Talón"
 tagline:      "iOS developer"
-description:  "I am an software engineer from Canary Islands, working most of the time on iOS. Also a musician, runner, scuba diver and apprentice snowboarder. I write here mostly about software development."
+description:  "I am an software engineer from Canary Islands, working most of the time on iOS. I like playing guitar, snowboarding, scuba diving and running. I write here mostly about software development."
 
 # About/contact
 author:
@@ -50,7 +50,7 @@ defaults:
     scope:
       path: ""
     values:
-      description: "Eliezer Talón – iOS developer"
+      description: "Eliezer Talón – Software developer"
   -
     scope:
       path: ""

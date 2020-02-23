@@ -1,6 +1,6 @@
-# elitalon.com
+# elitalon.github.io
 
-This is the source code of the blog [elitalon.com](http://elitalon.com).
+This is the source code of the blog [elitalon.github.io](https://elitalon.github.io).
 
 
 ## Author
