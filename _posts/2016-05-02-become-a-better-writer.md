@@ -43,7 +43,7 @@ Let me give you another example. In [App Builders](https://www.appbuilders.ch) 2
 
 Did you notice the pattern above? Writing effectively is not about you. It's about communicating clearly and concisely so that others can understand.
 
-You can argue that those skills are crucial in open-source projects because that's the way work is done; it's not that important when your team is in the same room. Maybe you're right. But I have found that oftentimes those were mere excuses to justify my laziness and lack of empathy for others.
+You can argue that those skills are crucial in open-source projects because that's the way work is done; it's not that important when your team is in the same room. Maybe you're right. But I have found that frequently those were mere excuses to justify my laziness and lack of empathy for others.
 
 
 ## Finding the sweet spot
