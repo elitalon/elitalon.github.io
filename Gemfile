@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Basic setup
-gem "jekyll", "~> 3.7.4"
+gem "jekyll", "~> 3.7"
 gem "rouge"
 
 # Plugins
