@@ -6,9 +6,9 @@ I started using GitFlow more or less two years after [Vincent Driessen](https://
 
 <!--more-->
 
-The company I was working for back then had recently moved from Subversion to Git. We were struggling with defining the best approach for collaborative development, since not everyone was familiar Git. More often than not, either me or another experienced Git user had to help another fellow developer to understand what was going on. So the team welcomed the idea of having a consistent way of working with our repositories.
+The company I was working for had recently moved from Subversion to Git. We were struggling with defining the best approach for collaborative development, since not everyone was familiar with Git. More often than not, experienced Git users had to help other teammates to understand what was going on. With GitFlow everyone in the team welcomed the idea of having a consistent way of working with our repositories.
 
-Four years has passed and every company I have worked with seems to have adopted GitFlow as the default approach. But as with any other tool or methodology, one has to carefully **examine whether it fits the purpose of a project or the way a team works**. I have the impression that little thought has been put into choosing GitFlow as *de facto* model. I'd like to share with you what I consider two of its design weaknesses.
+Four years has passed and every company I have worked with seems to have embraced GitFlow as the default approach. But as with any other tool or methodology, one has to carefully _examine whether it fits the purpose of a project or the way a team works_. I have the impression that little thought has been put into choosing GitFlow as *de facto* model. I'd like to share with you what I consider two of its weaknesses.
 
 
 ## Redundant branches
@@ -16,7 +16,7 @@ Four years has passed and every company I have worked with seems to have adopted
 
 > *When the source code in the `develop` branch reaches a stable point and is ready to be released, all of the changes should be merged back into `master` somehow and then tagged with a release number.*
 
-I always wondered if nobody has noticed that the `master` branch is completely useless in this model. If every release must be tagged, why do we need the separation between `master` and `develop` at all? Can't we just live with a single *main* branch and go back to any release using its tag?
+I always wondered if nobody noticed that the `master` branch is completely useless in this model. If every release must be tagged, why do we need the separation between `master` and `develop` at all? Can't we just live with a single *main* branch and go back to any release using its tag?
 
 Not even the need for `hotfix` branches seems to justify this redundancy. It's perfectly possible to create a branch from a tag, apply the patch for the existing bug in production and merge back to the main branch.
 
@@ -26,19 +26,24 @@ Not even the need for `hotfix` branches seems to justify this redundancy. It's p
 
 > *Reverting a whole feature (i.e. a group of commits), is a true headache (...) whereas it is easily done if the --no-ff flag was used.*
 
-By avoiding [fast-forward merges](http://git-scm.com/docs/git-merge#_fast_forward_merge) the commit history of the repository is polluted with merge commits. This situation is even worse when you realise that both [GitHub](https://help.github.com/articles/merging-a-pull-request/) and [Bitbucket](https://bitbucket.org/site/master/issues/6106/forced-non-fast-forward-merge-of-pull) merge pull requests using that flag. But to be honest, I haven't found a situation where those commits have been proven useful. Let me address these apparent benefits.
+By avoiding [fast-forward merges](http://git-scm.com/docs/git-merge#_fast_forward_merge) the commit history of the repository is polluted with merge commits. This situation is even worse when you realise that both [GitHub](https://help.github.com/articles/merging-a-pull-request/) and [Bitbucket](https://bitbucket.org/site/master/issues/6106/forced-non-fast-forward-merge-of-pull) merge pull requests using that flag. But to be honest, I haven't found a situation yet where those commits have been proven useful. Let me address these apparent benefits.
 
 
-## Historical reference
-There are other ways of keeping historical reference of when a feature was merged. If you have an issue-tracking system, you can prefix commit messages with the related feature ID. You can also provide [better commit messages](http://chris.beams.io/posts/git-commit/), something that I definitely encourage you to do.
+### Historical reference
+There are other ways of keeping historical reference of _when_ a feature was merged. If you have an issue-tracking system, you can prefix commit messages with the related feature ID. You can also provide [better commit messages](http://chris.beams.io/posts/git-commit/) or maintain a [CHANGELOG](https://keepachangelog.com/en/1.0.0/), something I definitely recommend.
 
-In any case, I think that the fact that a branch was merged at some point in time does not tell me anything about the lifetime of a feature.
+In any case, the fact that some branch was merged at some point in time does not tell me anything about the lifetime of a feature.
 
 
-## Reverting a feature
-The existence of merge commits are in theory useful to revert a feature. In my opinion, this is a highly unlikely scenario when you work in a team. You usually find developers working together in several features and using multiple branches. If you want to share work with your team (e.g. because you refactored some code along the way) you have to merge changes so that everyone can benefit. Make that a couple of times and there is no easy way of *"reverting a whole feature"* anymore.
+### Reverting a feature
+The existence of merge commits are in theory useful to revert a feature. This is a highly unlikely scenario when you work in a team, where
 
-And this is because **software development is inherently an organic process**. It's very difficult to be in an scenario where a feature starts and gets merged later without being affected by changes in other branches. If that happens, it's probably because the change is so small that you can revert it easily with another batch of changes. And that reflects better the reality of the project: we introduced a change and we explicitly reverted it for some reason.
+- Several developers work together in one or more features
+- One or more features are developed concurrently
+
+As a result, multiple branches coexist. They are created and merged so that everyone in the team can benefit from everyone's work. Go through that a few times and there is no easy way of reverting a whole feature anymore.
+
+This is because *software development is inherently an organic process*. An scenario where a feature starts and gets merged later without being affected by changes in other branches is rare to happen. And when it does it's probably because the change was so small that making a subsequent change on top has roughly the same cost as reverting a previous one. That would actually reflect the reality of the project more accuralety: we introduced a change and for some reason we adjusted it later.
 
 If you really want to revert a feature, you [design it in a way that you can do that with the software itself](http://martinfowler.com/articles/feature-toggles.html), not by messing with the commit history.
 
