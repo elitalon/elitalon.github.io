@@ -15,6 +15,7 @@ exclude: ['Gemfile', 'Gemfile.lock', 'public/css/Paratype PT Sans Free Font Lice
 excerpt_separator:  <!--more-->
 kramdown:
   input: GFM
+  auto_ids: true
 
 # Plugins
 plugins: [jekyll-paginate, jekyll-sitemap, jekyll-seo-tag]
