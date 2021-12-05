@@ -9,7 +9,9 @@ timezone: "Europe/Zurich"
 feed_url: "https://elitalon.github.io/feed.xml"
 
 # Build settings
-exclude: ['Gemfile', 'Gemfile.lock', 'public/css/Paratype PT Sans Free Font License.txt']
+exclude: [
+  'public/css/Paratype PT Sans Free Font License.txt'
+]
 
 # Writing
 excerpt_separator:  <!--more-->

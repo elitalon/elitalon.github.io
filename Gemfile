@@ -1,11 +1,9 @@
 source 'https://rubygems.org'
 
 # Basic setup
-gem "jekyll", "~> 3.7"
+gem "jekyll"
 gem "rouge"
-
-# Jekyll add-ons
-gem "kramdown-parser-gfm"
+gem "webrick"
 
 # Plugins
 group :jekyll_plugins do
