@@ -24,6 +24,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-github-metadata
 
 # Default content
 title:        "Eliezer Talón"
