@@ -30,13 +30,13 @@
       {% assign title = social_media[0] %}
       {% assign url = social_media[1] %}
       {% if prepend_dash %}&nbsp;&ndash;&nbsp;{% endif %}
-      <a href="{{ url }}" title="{{ title }}">{{ title }}</a>
+      <a href="{{ url }}" title="{{ title }}" target="_blank">{{ title }}</a>
       {% assign prepend_dash = true %}
     {% endfor %}
   </div>
 
   <div class="sidebar-item">
-    <p>This site is <a href="{{ site.license.source }}" title="View source code on GitHub">open source</a>. Content licensed under <a rel="license" href="{{ site.license.url }}">{{ site.license.title }}</a>
+    <p>This site is <a href="{{ site.license.source }}" title="View source code on GitHub" target="_blank">open source</a>. Content licensed under <a rel="license" href="{{ site.license.url }}" target="_blank">{{ site.license.title }}</a>
     </p>
   </div>
 </div>
