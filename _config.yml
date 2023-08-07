@@ -29,13 +29,13 @@ plugins:
 
 # Default content
 title:        "Eliezer Talón"
-tagline:      "Software developer"
+tagline:      "Software Engineer"
 description:  "I am a Spanish software engineer living in Switzerland. I have focused on iOS development lately, but I dabble in other fields. I like playing guitar, snowboarding, scuba diving and running. I write here mostly about software development."
 
 # About/contact
 author:
   name:   "Eliezer Talón"
-  url:    "https://twitter.com/elitalon"
+  url:    "https://elitalon.github.io"
   email:  "elitalon@fastmail.com"
   twitter: elitalon
 social_media:
@@ -46,6 +46,12 @@ social_media:
 # SEO
 twitter:
   username: elitalon
+social:
+  name: "Eliezer Talón"
+  links:
+    - https://twitter.com/elitalon
+    - https://mastodon.social/@elitalon
+    - https://www.linkedin.com/in/elitalon
 
 # License
 license:
