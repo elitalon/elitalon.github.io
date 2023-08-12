@@ -1,0 +1,11 @@
+.footnotes {
+  font-size: 70%;
+  margin: 2rem 0em 0em 0em;
+  padding: 1rem 0em 0em 0em;
+  color: #7a7a7a;
+}
+
+.footnotes, ol {
+  margin-top: 0;
+  padding-left: 0.5rem;
+}
