@@ -1,33 +1,36 @@
 ---
 title: The real value of fastlane
-description: Discovering where fastlane really shines when going beyond the default tools for more complex deployment pipelines
+description: Realising that fastlane really shines when composing actions for more complex deployment pipelines
 ---
-When [fastlane](https://fastlane.tools) started to get attention from the community, I was not particularly excited about it. I thought it was certainly a cool project, but it was not solving any real problem.
+I was not particularly excited when [fastlane](https://fastlane.tools) started to get attention from the community. I agreed it was a cool project, but it was not solving any actual problem I had.
 
 <!--more-->
 
-We already had [nomad](https://github.com/nomad) and [xctool](https://github.com/facebook/xctool), plus `xcrun` and the improved `xcodebuild`. I just didn't see the need of another tool to deal with workflows that any seasoned iOS developer should be able to manage. However, I got involved recently in a relatively big project and decided to give fastlane a go.
+We already had [nomad](https://github.com/nomad), [xctool](https://github.com/facebook/xctool), `xcrun` and an improved `xcodebuild`. I just didn't see the need of another tool to deal with workflows that any seasoned iOS developer should be familiar with.
 
+But I got involved recently in a relatively big project and decided to try fastlane.
 
-## Cleaning a Makefile
-I usually include a [Makefile](https://www.gnu.org/software/make/manual/make.html#Introduction) with my iOS projects, where the *targets* are simply shortcuts to perform different tasks. Each target contains one or more *recipes* in order to complete a given task. For example, a "deploy" target may run the tests, create an [IPA](https://en.wikipedia.org/wiki/.ipa_(file_extension)) and send it somewhere via `curl`. Those targets can be easily triggered in a CI service.
+## Simplifying Makefiles
+I usually include a [Makefile](https://www.gnu.org/software/make/manual/make.html#Introduction) with the iOS projects I work on, where [_rules_](https://www.gnu.org/software/make/manual/html_node/Rule-Introduction.html) act as shortcuts to perform different workflows. A _target_ in a rule is the entry point for performing one or more _recipes_ that eventually completes a given workflow.
 
-So I started replacing the recipes with the [iOS toolchain](https://github.com/fastlane/fastlane/blob/7aeb29aea2eb437f8c6bd79f9c657528f160a3d0/README.md#fastlane-toolchain) that fastlane provides. I often use [xcpretty](https://github.com/supermarin/xcpretty) to filter the output too, so I was able to clean up the initial Makefile a little bit. But still, it felt like I was simply replacing one set of tools with another.
+For example, a `deploy` target would have three recipes: running all tests, creating an [IPA](https://en.wikipedia.org/wiki/.ipa_(file_extension)) and sending artefacts somewhere via `scp`, `sftp` or a similar tool.
 
+My first step in adopting fastlane was to use its [tools](https://github.com/fastlane/fastlane/blob/7aeb29aea2eb437f8c6bd79f9c657528f160a3d0/README.md#fastlane-toolchain) to replace some of the recipes. Like fastlane, I often use [xcpretty](https://github.com/supermarin/xcpretty) to make `xcodebuild`'s output more developer-friendly, so it was something we could get rid of too.
 
-## Dealing with complex pipelines
-Later on I had to customise some of the build configurations of the CI service and add new ones. The changes needed were complex and adding more stuff to the Makefile made it grow out of control. Both the number of recipes per target and the variables to reuse program arguments increased significantly.
+All in all we were able to simplify the initial Makefile a bit, but it still felt like we were only replacing one set of tools with another. With the downside that this new set of tools was a third party dependency we didn't control.
 
-Depending on the specific pipeline I needed to switch branches, go back to a previous release, notify the team on Slack, temporarily increment the bundle version, submit the builds to external services,…
+## Dealing with complex workflows
+Shortly afterwards we had to add new configurations and workflows for the pipelines in the [CI service](https://en.wikipedia.org/wiki/Continuous_integration).
 
-So I dug into fastlane's documentation and found a potential solution: the [actions](https://github.com/fastlane/fastlane/blob/master/docs/Actions.md). Besides the default toolchain, fastlane also offers more than a hundred additional actions that covered almost every single requirement I had. I kept cleaning up the Makefile and moved most of the original targets into dedicated lanes in the [Fastfile](https://github.com/fastlane/fastlane/tree/master/docs), thus reducing the code needed to execute them.
+The changes needed were complex. Depending on the pipeline we had to switch branches, check out previous releases, notify the team on Slack, increment bundle versions, submit builds to external services, etc. As a result, adapting the Makefile made it grow out of control.
 
-I suddenly realised that my initial thought about fastlane was due to an oversimplification. I still think that some of the tools (e.g. [gym](https://github.com/fastlane/gym) or [scan](https://github.com/fastlane/scan)) do not present any real advantage over mastering `xcodebuild`, while some others are just a nice-to-have (e.g. [snapshot](https://github.com/fastlane/snapshot), [match](https://github.com/fastlane/match) or [pem](https://github.com/fastlane/pem)). But the ability to combine these tools with the rest of default actions is what makes fastlane really stand out of other alternatives.
+We turned to fastlane's documentation, hoping to find an alternative solution. And we indeed found that, besides the default toolchain, fastlane also offered [actions](https://github.com/fastlane/fastlane/blob/master/docs/Actions.md): additional utilities that covered practically every single requirement we had. So we kept refactoring the Makefile, transforming most of the original rules into lanes in a [Fastfile](https://github.com/fastlane/fastlane/blob/7aeb29aea2eb437f8c6bd79f9c657528f160a3d0/docs/README.md#fastfile) that reduced the amount of code required for each workflow.
 
+## The real value of fastlane
+At that point I had to admit that my initial thought about fastlane was an oversimplification.
 
-## What fastlane really means
-For beginners, fastlane's toolchain provides an easy way of automating different development tasks (building, testing, creating IPAs,…). Setting up a continuous integration and deployment service becomes then more manageable, although every iOS developer should know what is happening behind the scenes.
+I still think that using some of the tools in isolation, like [gym](https://github.com/fastlane/gym) or [scan](https://github.com/fastlane/scan), do not present a significant advantage over mastering `xcodebuild`. And others like [snapshot](https://github.com/fastlane/snapshot) are simply nice-to-have. But the ability to combine these tools and actions together in complex workflows is what makes fastlane really shine (as if it had been inspired by the [Unix philosophy](https://en.wikipedia.org/wiki/Unix_philosophy)).
 
-However, for me the real value of fastlane lies in the ecosystem surrounding it. By offering a way to integrate additional actions, fastlane has rather become a framework that allows developers to implement really complex pipelines beyond the scope of the default tools.
+On top of that, a whole ecosystem around fastlane is growing because it also offers a way to integrate external actions. This makes it a kind of framework that allows developers add their own functionality when something is missing from the built-in toolchain.
 
-The only downside is that now iOS projects have (another) dependency with a third-party tool, which is something I do not like. I'll keep a copy of my good old Makefile, just in case.
+The only downside I still see is that now iOS projects have yet another dependency with a third party tool, which is always a risk. I'll keep a copy of my good old Makefile, just in case.
