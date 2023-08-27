@@ -29,7 +29,7 @@ Back in 2007, when I was doing my internship, I borrowed [Getting Real](https://
 
 On the [Wordsmiths](https://basecamp.com/gettingreal/08.6-wordsmiths#hire-good-writers) chapter they talk about a curious hiring policy:
 
-> _If you are trying to decide between a few people to fill a position, always hire the better writer. It doesn’t matter if that person is a designer, programmer, marketer, salesperson, or whatever, the writing skills will pay off. Effective, concise writing and editing leads to effective, concise code, design, emails, instant messages, and more_
+> _If you are trying to decide between a few people to fill a position, always hire the better writer. It doesn’t matter if that person is a designer, programmer, marketer, salesperson, or whatever, the writing skills will pay off. Effective, concise writing and editing leads to effective, concise code, design, emails, instant messages, and more._
 
 > _Good writers know how to communicate. They make things easy to understand. They can put themselves in someone else's shoes. They know what to omit. They think clearly. And those are the qualities you need._
 

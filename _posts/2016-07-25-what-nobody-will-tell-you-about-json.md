@@ -175,11 +175,11 @@ Just take a moment to see all the things that take part in this approach:
 
 But funnily enough, its authors state in the documentation that they:
 
-> _[…] feel that these patterns greatly reduce the pain felt in trying to use JSON with Swift_
+> _[…] feel that these patterns greatly reduce the pain felt in trying to use JSON with Swift._
 
 With all due respect, my answer to that is this statement from a [Nick O’Neill's talk](https://realm.io/news/slug-nick-oneill-native-swift-patterns/):
 
-> _Not every piece of clever code is a great pattern_
+> _Not every piece of clever code is a great pattern._
 
 To be fair it's true that this library was written for Swift 1, when everybody was experimenting and [taking the functional aspects of Swift to the limit](http://chris.eidhof.nl/post/json-parsing-in-swift/). So I can understand why they took this approach.
 
@@ -360,7 +360,7 @@ Can we afford to wait on framework maintainers to keep the pace of Swift changes
 
 We thought that staying close to the platform was the best way to avoid future headaches until Swift 3 proves to be stable enough. Dave Thomas [put it best](https://youtu.be/a-BOSpxYJ9M?t=23m15s) this way:
 
-> _When faced with two or more alternatives that deliver roughly the same value, take the path that makes future change easier_
+> _When faced with two or more alternatives that deliver roughly the same value, take the path that makes future change easier._
 
 ### Reasons for using a third party JSON library
 Now, I don’t want to discourage everyone from using third party libraries at all. I am particularly conservative when it comes to that, that’s my personal choice as an engineer developer.
