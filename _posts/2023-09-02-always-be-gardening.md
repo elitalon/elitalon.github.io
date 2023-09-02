@@ -144,7 +144,7 @@ That said, I would like to share two general guidelines that influence how I des
 I'm fine with duplicated code to a certain extent. Sometimes it's crystal clear that a piece of logic will be useful in other parts of the code. But sometimes a solution is quite specific to a context and it's difficult to tell what the right abstraction is. Here the [rule of three](https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)) is helpful.
 
 #### YAGNI, SOLID, DRY, in that order
-[YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it), the [SOLID](https://en.wikipedia.org/wiki/SOLID) ~~principles~~[^4] guidelines and DRY are helpful but sometimes they conflict with each other. For example, following the SOLID principles may lead us to create more classes than we really need to solve a simple problem.
+[YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it), the [SOLID](https://en.wikipedia.org/wiki/SOLID) ~~principles~~[^4] guidelines and [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) are helpful but sometimes they conflict with each other. For example, following the SOLID principles may lead us to create more classes than we really need to solve a simple problem.
 
 That's why I follow a kind of priority list:
 
