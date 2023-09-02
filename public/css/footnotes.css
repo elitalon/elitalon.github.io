@@ -5,7 +5,11 @@
   color: #7a7a7a;
 }
 
-.footnotes, ol {
+.footnotes ol {
   margin-top: 0;
-  padding-left: 0.5rem;
+  padding-left: 1rem;
+}
+
+.footnotes ol p {
+  margin-bottom: 0.5rem;
 }
