@@ -72,11 +72,11 @@ All of this sounds good in theory, but how can we actually do gardening in pract
 
 With that in mind I would like to share some practical things I do:
 
-1. Don't ask for permission
-2. Keep your own list of pain points
-3. Have a strategy
-4. Testing is your friend
-5. Code is an expense
+1. [Don't ask for permission](#dont-ask-for-permission)
+2. [Keep your own list of pain points](#keep-your-own-list-of-pain-points)
+3. [Have a strategy](#have-a-strategy)
+4. [Testing is your friend](#testing-is-your-friend)
+5. [Code is an expense](#code-is-an-expense)
 
 This is first and foremost my personal experience. It's what I’ve found to work for me and the projects I’ve worked on. But I believe it can be beneficial for you too.
 
