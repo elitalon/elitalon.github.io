@@ -2,13 +2,13 @@
 title: "Enums: Java vs Swift"
 description: A comparison of the capabilities of enumerations in Java and Swift.
 ---
-I had always thought that Java [enumerations](https://en.wikipedia.org/wiki/Enumerated_type) were a rather simple data type, as they're in C for example. But I discovered recently, as part of doing some backend work, that they're actually much more versatile.
+I had always thought that Java [enumerations](https://en.wikipedia.org/wiki/Enumerated_type) were a rather simple data type, as they are designed in C for example. But I discovered recently, as part of doing some backend work, that they're actually much more versatile.
 
 <!--more-->
 
-Enumerations in Java are implemented through the [Enum base class](https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Enum.html), from which all other enumerations inherit. They provide a special syntax (e.g. using the `enum` keyword instead of `class` to declare them) and a somewhat restricted behaviour. But precisely because they _are_ a class, they also come with most of their functionality.
+Enumerations in Java are implemented through the [Enum base class](https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Enum.html), from which all enumerations inherit. They come with a special syntax (e.g. using the `enum` keyword instead of `class` to declare them) and a somewhat restricted behaviour. But precisely because they _are_ a class, they also offer most of their functionality.
 
-I thought it would be an interesting exercise to compare their capabilities with [enumerations in Swift](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/enumerations), because it's the language I use the most and its enumeration type is also powerful.
+I thought it would be an interesting exercise to compare their capabilities with [enumerations in Swift](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/enumerations) because Swift is currently the language I use the most and its enumeration type is also powerful.
 
 Throughout this post I will be using the [SE 18 Edition](https://docs.oracle.com/javase/specs/jls/se18/html/index.html) of the Java Language Specification (JLS) and [version 5.9](https://github.com/apple/swift-book/tree/swift-5.9-fcs) of the [Swift Programming Language](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/aboutthelanguagereference/). And it wouldn't be fair if I didn't thank [Joshua Bloch](https://twitter.com/joshbloch) for his invaluable explanations in [Effective Java](https://www.pearson.com/en-us/subject-catalog/p/effective-java/P200000000138/9780134685991).
 
@@ -48,9 +48,9 @@ let summer = Season.summer
 
 This trivial example is enough to discover how much functionality they provide out of the box.
 
-In the case of Java `Season` is effectively a subclass of [Enum](https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Enum.html), which means we have methods like `name()`, `ordinal()` or `valueOf()` at our disposal. And by extension we also get all the functionality of [Object](https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Object.html).
+In the case of Java, `Season` is effectively a subclass of [Enum](https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Enum.html). This means we have methods like `name()`, `ordinal()` or `valueOf()` at our disposal and, by extension, we also get all the functionality of [Object](https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Object.html).
 
-In comparison it may seem like enumerations in Swift are more limited because they don't inherit from any parent class nor implements any interface. But in the absence of a superclass like Java's [Object](https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Object.html), a Swift `enum` comes with an equivalent built-in implementation of interfaces like [CustomStringConvertible](https://developer.apple.com/documentation/swift/customstringconvertible), [Hashable](https://developer.apple.com/documentation/swift/hashable) or [Codable](https://developer.apple.com/documentation/swift/codable).
+In comparison it may seem like enumerations in Swift are more limited because they don't inherit from any parent class nor implement any interface. But in the absence of a superclass like Java's [Object](https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Object.html), a Swift `enum` comes with an equivalent built-in implementation of interfaces like [CustomStringConvertible](https://developer.apple.com/documentation/swift/customstringconvertible), [Hashable](https://developer.apple.com/documentation/swift/hashable) or [Codable](https://developer.apple.com/documentation/swift/codable).
 
 ### Storing additional values
 A more advanced way of creating enumerations is by storing additional values alongside each constant.
@@ -160,7 +160,7 @@ enum VideoFormat {
 ```
 
 ## Switching over values
-A typical application of enumerations is to use them in [switch statements](https://en.wikipedia.org/wiki/Switch_statement) that work similarly in both languages, syntactical differences aside:
+A typical application of enumerations is to use them in [switch statements](https://en.wikipedia.org/wiki/Switch_statement). They work similarly in both languages, syntactical differences aside:
 
 ```java
 // Java
@@ -282,7 +282,7 @@ enum ReadState: CaseIterable {
 ## Extending enumerations behaviour
 We can extend the behaviour of enumerations in several ways.
 
-One already shown in previous sections is by implementing interfaces. For example, Java's `Enum` base class implements [Comparable](https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Comparable.html) among others. And we saw how adopting the `CaseIterable` interface in Swift allows us to generate all values of an enumeration.
+One already shown in previous sections is by implementing interfaces. Java's `Enum` base class implements [Comparable](https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Comparable.html) among others. And we saw how adopting the `CaseIterable` interface in Swift allows us to generate all values of an enumeration.
 
 Another obvious way is by writing our own instance methods:
 
@@ -326,7 +326,7 @@ let card = CreditCardType.platinum
 print(card.cashback(for: 15)) // 0.1125
 ```
 
-Note how in both examples above we get the same behaviour regardless of the underlying enumeration constant: we multiply `amount` by the corresponding `cashbackRate`. But what if we wanted a different behaviour for each case?
+Note how in both examples above we get the same behaviour regardless of the underlying enumeration constant: `amount` is multiplied by the corresponding `cashbackRate`. But what if we wanted a different behaviour for each case?
 
 In Swift there's no other way but switching over `self`:
 
@@ -416,7 +416,7 @@ We have only scratched the surface of what's possible with enumerations in Java 
 
 In Swift, the most notable is perhaps [associated values](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/enumerations/#Associated-Values), which can be of a variable number and from heterogeneous types.
 
-In the case of Java, I was pleasantly surprised by the ability to associate different behaviours with each constant without having to switch over their value.
+In the case of Java, I was pleasantly surprised by the ability to associate different behaviours with each constant by having abstract methods instead of switching over `this`.
 
 I hope you've found this small comparison of such an essential type useful. I have left out things like [recursive enumerations](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/enumerations#Recursive-Enumerations), in hope that you can discover them and continue exploring on your own.
 
