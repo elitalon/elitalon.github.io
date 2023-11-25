@@ -420,5 +420,5 @@ In the case of Java, I was pleasantly surprised by the ability to associate diff
 
 I hope you've found this small comparison of such an essential type useful. I have left out things like [recursive enumerations](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/enumerations#Recursive-Enumerations), in hope that you can discover them and continue exploring on your own.
 
-[^1]: Swift's enum are in this way quite similar to a [tagged union](https://en.wikipedia.org/wiki/Tagged_union).
+[^1]: Swift's `enum` is in this way quite similar to a [tagged union](https://en.wikipedia.org/wiki/Tagged_union).
 [^2]: This seems a widespread view in Object-Oriented Programming and has been catalogued by Martin Fowler as a code smell in ["Refactoring: Improving the Design of Existing Code"](https://martinfowler.com/books/refactoring.html).
