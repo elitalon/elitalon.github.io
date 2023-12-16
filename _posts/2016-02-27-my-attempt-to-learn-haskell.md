@@ -1,6 +1,6 @@
 ---
 title: My attempt to learn Haskell
-description: An unpleasant journey towards learning functional programming through Haskell
+description: A bumpy road rediscovering functional programming through Haskell
 ---
 A lot of attention was brought into functional programming when Swift [was announced in WWDC 2014](https://developer.apple.com/videos/play/wwdc2014/101/). That wasn't really new. Bringing these concepts to your day-to-day programming has been a trend in general. But within the Apple ecosystem in particular, Swift made everyone take it more seriously.
 

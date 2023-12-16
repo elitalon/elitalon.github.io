@@ -1,6 +1,6 @@
 ---
 title: Blameless postmortems
-description: Reflecting about problems with blameless postmortems
+description: Some thoughts about why blameless postmortems can be problematic
 ---
 
 <!--more-->

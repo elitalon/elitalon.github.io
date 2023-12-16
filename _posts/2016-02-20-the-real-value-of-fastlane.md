@@ -1,6 +1,6 @@
 ---
 title: The real value of fastlane
-description: Realising that fastlane really shines when composing actions for more complex deployment pipelines
+description: Fastlane really shines when composing actions for more complex deployment pipelines
 ---
 I was not particularly excited when [fastlane](https://fastlane.tools) started to get attention from the community. I agreed it was a cool project, but it was not solving any actual problem I had.
 

@@ -1,6 +1,6 @@
 ---
 title: Design weaknesses of GitFlow
-description: Thoughts about the weaknesses of GitFlow after four years using it
+description: Weaknesses I have found in GitFlow after four years using it
 ---
 I started using GitFlow more or less two years after [Vincent Driessen][https://twitter.com/nvie] introduced [his proposal][http://nvie.com/posts/a-successful-git-branching-model] in 2010. Since then, there has been many times in which either me or another fellow developer has faced some issues with it.
 
