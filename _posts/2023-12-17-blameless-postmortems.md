@@ -25,13 +25,13 @@ In my career I have also made mistakes that ended up in a postmortem. I remember
 
 In these two cases no one needed to blame me because I did so myself. And here comes the twist: regardless of whether others actually blame you or not, sometimes you can't help but thinking that someone will. I agree it's just how our brains are wired.
 
-Now, this is not to say that postmortems aren't useful at all and we shouldn't be doing them[^3]. My point is rather to avoid fooling ourselves with the idea that they can be blameless.
+This is not to say that postmortems aren't useful at all and we shouldn't be doing them[^3]. My point is rather to avoid fooling ourselves with the idea that they can be blameless.
 
 Being aware of their problems can help us evaluate if they are the right tool for our team or a specific incident. We could ask ourselves questions like:
 
 - Do their benefits compensate the damage we might be inflicting to the psychological safety in the team?
-- Is the outcome worth making it publicly available to the whole company?
-- Is there any other process or tool we can use instead, like lightweight informal retrospectives?
+- Is it worth worth making them publicly available to the whole company or a whole department?
+- Is there any other tool we could use instead, like lightweight informal retrospectives?
 
 If postmortems work for you, then great. But make sure you don't adopt them just because if they do for someone else, they should for you too.
 
