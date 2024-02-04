@@ -9,7 +9,7 @@ I worked once in a team that struggled to fix bugs in the mobile apps we were de
 
 The most immediate consequence, from an organisational perspective, was that the list of bugs kept growing as users and stakeholders continued filing them. This had an impact on the morale of the team because we thought we would never be able to catch up.
 
-I also had the impression that a sense of disinterest on the part of some employees and stakeholders had set in. As if they were thinking "if they're not going to be fixed, why bother reporting them?". That's completely understandable, but it meant that there might be bugs we didn't know about.
+I also had the impression that a sense of disinterest on some employees and stakeholders had set in. As if they were thinking "if they're not going to be fixed, why bother reporting them?". That's completely understandable, but it meant that there might be bugs we didn't know about.
 
 But what was probably worse is that deferring working on these issues would eventually damage the brand and bring the satisfaction of users down. This effect, described more in detail in [Death by a Thousand Papercuts](https://engineering.instawork.com/death-by-a-thousand-papercuts-and-how-to-avoid-it-d2f05070b339), is actually difficult to detect and measure because it only develops over time and it's not easy to attribute to a single cause.
 
@@ -42,6 +42,6 @@ I think that this approach works pretty well when bugs are discovered soon after
 
 For features that have been developed a long time ago, I would argue that bugs still deserve going through some sort of prioritisation and living in the backlog for a while to give them a chance.
 
-But if I had to choose one of the two approaches, all these years working on different teams and products have led me to believe that fixing bugs the moment we discover them is probably more effective. We might have to pay the price of slightly delaying work that had already been planned. But on the upside it will help keep the product in a consistently good quality, if not improved, over time.
+But if I had to choose one of the two approaches, all these years working on different teams and products have led me to believe that fixing bugs the moment we discover them is probably more effective. We might have to pay the price of slightly delaying work that has already been planned. But on the upside it will help keep the product in a consistently good quality, if not improved, over time.
 
 [^1]: We were working within a Scrum setup, with two-week sprints. But a similar approach would have worked with any other methodology.
