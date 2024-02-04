@@ -2,7 +2,7 @@
 title: Design weaknesses of GitFlow
 description: Weaknesses I have found in GitFlow after four years using it
 ---
-I started using GitFlow more or less two years after [Vincent Driessen][https://twitter.com/nvie] introduced [his proposal][http://nvie.com/posts/a-successful-git-branching-model] in 2010. Since then, there has been many times in which either me or another fellow developer has faced some issues with it.
+I started using GitFlow more or less two years after [Vincent Driessen](https://twitter.com/nvie) introduced [his proposal](http://nvie.com/posts/a-successful-git-branching-model) in 2010. Since then, there has been many times in which either me or another fellow developer has faced some issues with it.
 
 <!--more-->
 
@@ -53,4 +53,4 @@ Git is a difficult tool to master. Making mistakes is easy and it takes a while 
 
 It's also difficult to change established processes in a team when every member is familiar with them. Conventions are powerful. And the fact that major version control cloud services don't offer a way to do fast-forward merges doesn't help either.
 
-But I'm not the first one that have seen issues like the ones I described above. [Scott Chacon](https://twitter.com/chacon) proposed in 2011 [the GitHub flow](http://scottchacon.com/2011/08/31/github-flow.html) as a simpler alternative. If you are willing to escape from GitFlow, I would start there.
+But I'm not the first one that have seen issues like the ones I described above. [Scott Chacon](https://twitter.com/chacon) proposed in 2011 [the GitHub flow](https://scottchacon.com/2011/08/31/github-flow/) as a simpler alternative. If you are willing to escape from GitFlow, I would start there.
