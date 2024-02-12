@@ -5,7 +5,7 @@ description: Looking back after ten years living in Switzerland
 
 <!--more-->
 
-On February 3 2014, on a sunny Sunday afternoon, I took a flight from Gran Canaria. I was carrying two suitcases, a backpack, a six-month work contract and most of our savings. Approximately four hours later I landed in [Zurich](https://en.wikipedia.org/wiki/Zurich). I had moved to [Switzerland](https://en.wikipedia.org/wiki/Switzerland).
+On February 2 2014, on a sunny Sunday afternoon, I took a flight from Gran Canaria. I was carrying two suitcases, a backpack, a six-month work contract and most of our savings. Approximately four hours later I landed in [Zurich](https://en.wikipedia.org/wiki/Zurich). I had moved to [Switzerland](https://en.wikipedia.org/wiki/Switzerland).
 
 ## Arrival
 I had been in Zurich before for a round of interviews with the company that I was joining as iOS developer. So I more or less knew how to get around. After taking a train to the city centre and tram line 3 to [Albisrieden](https://en.wikipedia.org/wiki/Albisrieden), I knocked on the door of the apartment I was going to share with Miki, my new Spanish flatmate.
