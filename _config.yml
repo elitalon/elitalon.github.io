@@ -2,19 +2,17 @@
 permalink: pretty
 
 # Setup
-url:      "https://elitalon.github.io"
-baseurl:  ""
+url: "https://elitalon.github.io"
+baseurl: ""
 paginate: 5
 timezone: "Europe/Zurich"
 feed_url: "https://elitalon.github.io/feed.xml"
 
 # Build settings
-exclude: [
-  'public/css/Paratype PT Sans Free Font License.txt'
-]
+exclude: ["public/css/Paratype PT Sans Free Font License.txt"]
 
 # Writing
-excerpt_separator:  <!--more-->
+excerpt_separator: <!--more-->
 kramdown:
   input: GFM
   auto_ids: true
@@ -28,20 +26,20 @@ plugins:
   - jekyll-github-metadata
 
 # Default content
-title:        "Eliezer Talón"
-tagline:      "Software Engineer"
-description:  "I am a Spanish software engineer living in Switzerland. I have focused on iOS development lately, but I dabble in other fields. I like playing guitar, snowboarding, scuba diving and running. I write here mostly about software development."
+title: "Eliezer Talón"
+tagline: "Software Engineer"
+description: "I am a Spanish software engineer living in Switzerland. I have focused on iOS development lately, but I dabble in other fields. I like playing guitar, snowboarding, running and swimming. I write here mostly about software development."
 
 # About/contact
 author:
-  name:   "Eliezer Talón"
-  url:    "https://elitalon.github.io"
-  email:  ""
+  name: "Eliezer Talón"
+  url: "https://elitalon.github.io"
+  email: ""
   twitter: elitalon
 social_media:
-  twitter:  "https://twitter.com/elitalon"
   mastodon: "https://mastodon.social/@elitalon"
   linkedin: "https://www.linkedin.com/in/elitalon"
+  twitter: "https://twitter.com/elitalon"
 
 # SEO
 twitter:
@@ -49,26 +47,24 @@ twitter:
 social:
   name: "Eliezer Talón"
   links:
-    - https://twitter.com/elitalon
     - https://mastodon.social/@elitalon
     - https://www.linkedin.com/in/elitalon
+    - https://twitter.com/elitalon
     - https://github.com/elitalon
 
 # License
 license:
   source: "https://github.com/elitalon/elitalon.github.io"
-  url:    "http://creativecommons.org/licenses/by/4.0/"
-  title:  "Creative Commons Attribution 4.0"
+  url: "http://creativecommons.org/licenses/by/4.0/"
+  title: "Creative Commons Attribution 4.0"
 
 # Front matter defaults
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
       description: "Eliezer Talón – Software Engineer"
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
