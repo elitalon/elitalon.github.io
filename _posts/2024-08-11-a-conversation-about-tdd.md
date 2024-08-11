@@ -41,13 +41,13 @@ My friend and I are both native Spanish speakers and, naturally, we talked in Sp
 
 **Me:** The difference is that the design is incremental, it emerges as you write more and more tests, communicating components with each other.
 
-**Me:** The problem I see is that we developers are mostly used to doing all the design upfront. And the notion of ‘one little bit of design at a time’ feels odd.
+**Me:** The problem I see is that we developers are mostly used to doing all the design upfront. And the notion of "one little bit of design at a time" feels odd.
 
 **Me:** This is based on my experience, anyway. I use TDD at my convenience, just as another tool. I don't care much about "pure TDD" 😅
 
 **Me:** To give you an analogy, TDD would be like using an [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) to validate a business idea with a group of users.
 
-**Me:** It helps me develop the minimum necessary code to "launch" a functionality to the market. And customers (me in three days) validate whether the design was right or not, using the ease of adapting the code for a new requirement as a metric.
+**Me:** It helps me develop the minimum necessary code to "launch" a functionality to the market. And users (for example, me the next week) validate whether the design was right or not, using the ease of changing the code for a new requirement as a metric.
 
 **Friend:** I think it's a good idea. The only problem I see is that it requires continuous refactoring, and that's a bit dangerous.
 
