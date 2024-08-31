@@ -63,7 +63,7 @@ defaults:
   - scope:
       path: ""
     values:
-      description: "Eliezer Talón – Software Engineer"
+      description: "Eliezer Talón"
   - scope:
       path: ""
       type: "posts"
