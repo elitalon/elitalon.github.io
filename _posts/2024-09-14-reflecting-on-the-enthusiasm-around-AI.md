@@ -7,7 +7,7 @@ description: Some thoughts about what's going on the "AI" front in 2024, based o
 
 I've tried to consolidate my thoughts on the current fad around "AI" for weeks already, hoping to write something constructive or at least something that didn’t sound too pessimistic. But regardless of the angle I took, I always ended up somewhat demoralised.
 
-So I'm just going to share the current issues I see with "AI" without any further rumination. If you want to read something more thoughtful, I highly recommend [Molly White's take](https://www.citationneeded.news/ai-isnt-useless/).
+So I'm just going to share the current issues I see with "AI" without further rumination. If you want to read a more thoughtful take, I highly recommend [Molly White's](https://www.citationneeded.news/ai-isnt-useless/).
 
 By the way, I write "AI" in quotes because what's been sold as artificial intelligence so far is pure marketing nonsense. [Generative AI](https://en.wikipedia.org/wiki/Generative_artificial_intelligence) (its actual name) belongs to the research field of [deep learning](https://en.wikipedia.org/wiki/Deep_learning), is not anywhere near actual AI[^1], and would be better called [statistical autocompletion](https://mastodon.social/@thomasfuchs@hachyderm.io/113125426967682488).
 
@@ -16,7 +16,7 @@ Products like [ChatGPT](https://chatgpt.com) use [Large Language Models](https:/
 
 One can argue that there are other products that benefit from similar techniques. [Search engines](https://en.wikipedia.org/wiki/Search_engine_(computing)), for example, crawl websites to build their page indexes and ranks. The difference is that their results link to the original source. Even if you pay for a search engine like [Kagi](https://kagi.com/), you will be paying for the indexing functionality, not for the content itself.
 
-Similarly, people can share copyrighted media on platforms like YouTube or SoundCloud. But these platforms usually go to great lengths to make sure that all content is published according to existing laws.
+People can also share copyrighted media on platforms like YouTube or SoundCloud. But these platforms usually go to great lengths to make sure that all content is published according to existing laws.
 
 The problem with some "AI" companies is that they take someone else's content and turn it into a commercial product, often without giving anything back to the original creators.
 
@@ -31,7 +31,7 @@ And more interestingly
 That's basically turning the rules around. OpenAI is proposing that they should be granted free access to any copyrighted content, and it's up to creators to say "hey, just don't steal from me, pretty please?".
 
 ## Environmental impact
-Then there's also the question of how much these "AI" products cost in terms of environmental impact.
+Then there's the question of how much these "AI" products cost in terms of environmental impact.
 
 Training a single LLM [takes a lot of energy](https://www.scientificamerican.com/article/the-ai-boom-could-use-a-shocking-amount-of-electricity/) and emits hundreds of tons of carbon. It also needs a decent amount of fresh water to cool down data centres. These requirements continue to increase as models become more and more advanced, as reported by [Kate Crawford in Nature](https://www.nature.com/articles/d41586-024-00478-x):
 
@@ -44,21 +44,21 @@ As if we didn't face enough challenges to put climate change measures in place, 
 I remember a time when [cryptocurrencies](https://en.wikipedia.org/wiki/Cryptocurrency), or [blockchains](https://en.wikipedia.org/wiki/Blockchain) in general, were heavily criticised for their impact on the environment. Could it be that LLMs don't get the same scrutiny because cryptocurrencies were mostly driven by outsiders, whereas "AI" is benefitting the ruling class?
 
 ## Ethical implications
-Another aspect that often goes unexamined in the race to adopt "AI" is the ethical implications that comes along with them.
+Another aspect that often goes unexamined in the race to adopt "AI" is the ethical implications that come along with it.
 
-On one hand, there's the incessant data collection, not just for training LLMs but also as part of users interacting with them.
+On one hand, there's the constant data collection, not just for training LLMs, but also as part of users interacting with them.
 
-When you ask one of these tools to solve something, you have to provide some input. This could be something as asking the colours of a flower. But in more complex tasks, users who aren't careful or experienced could disclose private or sensitive information that shouldn't reach these companies' servers.
+When you ask one of these tools to solve something, you have to provide some input. This could be something as simple as asking the colours of a flower. But in more complex tasks, users who aren't careful or experienced could disclose private or sensitive information that shouldn't reach these companies' servers.
 
 So a lot of information is being fed to the likes of OpenAI, Google, Microsoft, Meta and Apple, by millions and millions of users, one prompt at a time. What could they do with that in the future, should they have a need?
 
-On the other hand, there's also the false sense of accuracy, correctness or quality that many people attribute to this technology. But if you [spend enough time playing with them](/2024/06/01/quick-notes-on-using-github-copilot-with-xcode/), you'll soon realise that they hallucinate a lot.
+On the other hand, there's also the false sense of accuracy, correctness or quality that many people attribute to this technology. But if you [spend enough time playing with it](/2024/06/01/quick-notes-on-using-github-copilot-with-xcode/), you'll soon realise that it hallucinates a lot.
 
-Deep learning in general has many valid use cases. A neural network _specifically trained_ to perform a _very concrete_ task, like cancer detection in medical imaging, often works well and can serve as a tool to support human experts (note the emphasis I used).
+Deep learning in general has many valid use cases. A neural network _specifically trained_ to perform a _very concrete_ task, like cancer detection in medical imaging, often works well and can serve as a tool to support human experts (note the emphasis I just used).
 
 However, the current claim is that "AI" can be broadly applied as long as we [get the prompt right](https://en.wikipedia.org/wiki/Prompt_engineering), even when a correct outcome is _never_ guaranteed. In some instances, the same wrong results are returned over and over, simply because the misinformation and biases around the public Internet have also been used to train these models. Garbage in, garbage out.
 
-I believe that having these tools giving inaccurate or outright false information to users, regardless of their experience in a given domain, and then being applied to decision-making tasks is a huge liability.
+I believe that having these tools giving inaccurate or outright false information to users, regardless of their experience in a given domain, who will then apply it in decision-making tasks, is a huge liability.
 
 ## What about software development?
 I'd like to finish with some ideas about the impact of "AI" in software development, specifically on the use of coding assistants.
