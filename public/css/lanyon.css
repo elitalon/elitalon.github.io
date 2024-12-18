@@ -34,10 +34,29 @@
  * Update the foundational and global aspects of the page.
  */
 
+:root {
+  --main-text-color-light: #515151;
+  --main-text-color-dark: #a7a49a;
+
+  --main-background-light: #fff;
+  --main-background-dark: #181a1b;
+
+  --main-header-color-light: #313131;
+  --main-header-color-dark: #bebebe;
+
+  --post-title-color-light: #313131;
+  --post-title-color-dark: #cacaca;
+
+  --post-date-color-light: #9a9a9a;
+  --post-date-color-dark: #7a7a7a;
+}
+
 /* Prevent scroll on narrow devices */
 html,
 body {
   overflow-x: hidden;
+  color: light-dark(var(--main-text-color-light), var(--main-text-color-dark));
+  background-color: light-dark(var(--main-background-light), var(--main-background-dark));
 }
 
 html {
@@ -47,7 +66,7 @@ html {
 h1, h2, h3, h4, h5, h6 {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  color: #313131;
+  color: light-dark(var(--main-header-color-light), var(--main-header-color-dark));
   letter-spacing: -.025rem;
 }
 
@@ -55,6 +74,10 @@ sup {
   font-size: 70%;
 }
 
+code {
+  color: light-dark(#bf616a, #bf616a);
+  background-color: light-dark(#f9f9f9, #272822);
+}
 
 /*
  * Wrapper
@@ -107,14 +130,17 @@ sup {
   margin-top: 0;
   margin-bottom: 0;
   color: #505050;
+  color: light-dark(#505050, #c0c0c0);
 }
 .masthead-title a {
   color: #505050;
+  color: light-dark(#505050, #c0c0c0);
 }
 .masthead-title small {
   font-size: 75%;
   font-weight: 400;
   color: #c0c0c0;
+  color: light-dark(#c0c0c0, #505050);
   letter-spacing: 0;
 }
 
@@ -315,7 +341,7 @@ a.sidebar-nav-item:focus {
 .page-title,
 .post-title,
 .post-title a {
-  color: #303030;
+  color: light-dark(var(--post-title-color-light), var(--post-title-color-dark));
 }
 .page-title,
 .post-title {
@@ -327,7 +353,7 @@ a.sidebar-nav-item:focus {
   display: block;
   margin-top: -.5rem;
   margin-bottom: 1rem;
-  color: #9a9a9a;
+  color: light-dark(var(--post-date-color-light), var(--post-date-color-dark));
 }
 
 /* Related posts */
