@@ -27,8 +27,8 @@ plugins:
 
 # Default content
 title: "Eliezer Talón"
-tagline: "Software Engineer"
-description: "I am a Spanish software engineer living in Switzerland. I have focused on iOS development lately, but I dabble in other fields. I like playing guitar, snowboarding, running and swimming. I write here mostly about software development."
+tagline:
+description: "I am a Spanish software engineer living in Switzerland. I develop for iOS mainly, but I dabble in other fields. I like playing guitar, snowboarding, running and swimming. I write here mostly about software development."
 
 # About/contact
 author:
