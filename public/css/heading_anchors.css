@@ -1,36 +1,7 @@
-h1 {
-    margin-left: -20px;
-    padding-left: 10px;
-}
-
-h1, .post-title {
-  margin-left: 0;
-  padding-left: 0;
-}
-
-h2 {
-    margin-left: -18px;
-    padding-left: 10px;
-}
-
-h3 {
-    margin-left: -16px;
-    padding-left: 10px;
-}
-
-h4 {
-    margin-left: -14px;
-    padding-left: 10px;
-}
-
-h5 {
-    margin-left: -12px;
-    padding-left: 10px;
-}
-
-h6 {
-    margin-left: -10px;
-    padding-left: 10px;
+.anchored-heading {
+    padding: 0;
+    margin-left: -1.2rem;
+    padding-left: 0.8rem;
 }
 
 h1 .octicon, h2 .octicon, h3 .octicon, h4 .octicon, h5 .octicon, h6 .octicon  {
@@ -44,6 +15,6 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
 .octicon {
     fill: currentColor;
     padding: 0;
-    margin-left: -16px;
+    margin-left: -0.8rem;
     vertical-align: middle;
 }
