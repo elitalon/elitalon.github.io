@@ -1,14 +1,14 @@
 ---
 layout: page
 title: Now
-date: 2024-12-21
+date: 2025-01-18
 ---
 
 📚 [Thinking in Systems](https://www.chelseagreen.com/product/thinking-in-systems/)
 
-📺 [Outlander](https://en.wikipedia.org/wiki/Outlander_(TV_series))
+📺 [Outlander](https://en.wikipedia.org/wiki/Outlander_(TV_series)), [Phil Collins: Drummer First](https://www.youtube.com/watch?v=WdGmydR715Q)
 
-🎧 [Carlos Varela](https://en.wikipedia.org/wiki/Carlos_Varela_(singer-songwriter))'s Nada Es Como Antes, [Yesterwynde](https://en.wikipedia.org/wiki/Yesterwynde) and [Distance Over Time](https://en.wikipedia.org/wiki/Distance_Over_Time). I had a blast seeing Dream Theater live again, this time with [Mike Portnoy](https://en.wikipedia.org/wiki/Mike_Portnoy), one of my all-time favourite drummers, back with the band
+🎧 [Sorceress](https://en.wikipedia.org/wiki/Sorceress_(Opeth_album)), [Heritage](https://en.wikipedia.org/wiki/Heritage_(Opeth_album)), [El Patio](https://en.wikipedia.org/wiki/El_Patio)
 
 🏂 Winter season is here!
 
