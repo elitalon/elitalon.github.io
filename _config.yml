@@ -35,21 +35,16 @@ author:
   name: "Eliezer Talón"
   url: "https://elitalon.github.io"
   email: ""
-  twitter: elitalon
 social_media:
   mastodon: "https://mastodon.social/@elitalon"
   linkedin: "https://www.linkedin.com/in/elitalon"
-  twitter: "https://twitter.com/elitalon"
 
 # SEO
-twitter:
-  username: elitalon
 social:
   name: "Eliezer Talón"
   links:
     - https://mastodon.social/@elitalon
     - https://www.linkedin.com/in/elitalon
-    - https://twitter.com/elitalon
     - https://github.com/elitalon
 
 # License
