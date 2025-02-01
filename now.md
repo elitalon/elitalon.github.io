@@ -1,16 +1,17 @@
 ---
 layout: page
 title: Now
-date: 2025-01-18
+date: 2025-02-01
 ---
 
-📚 [Thinking in Systems](https://www.chelseagreen.com/product/thinking-in-systems/)
+## 📚 Reading
+[Thinking in Systems](https://www.chelseagreen.com/product/thinking-in-systems/)
 
-📺 [Outlander](https://en.wikipedia.org/wiki/Outlander_(TV_series)), [Phil Collins: Drummer First](https://www.youtube.com/watch?v=WdGmydR715Q)
+## 🎧 Listening
+[Moonglow](https://en.wikipedia.org/wiki/Moonglow_(Avantasia_album)), [ERROR](https://en.wikipedia.org/wiki/Error_(The_Warning_album))
 
-🎧 [Sorceress](https://en.wikipedia.org/wiki/Sorceress_(Opeth_album)), [Heritage](https://en.wikipedia.org/wiki/Heritage_(Opeth_album)), [El Patio](https://en.wikipedia.org/wiki/El_Patio)
-
-🏂 Winter season is here!
+## 🏂 Sports
+Winter season is here!
 
 ---
 
