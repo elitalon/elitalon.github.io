@@ -1,5 +1,5 @@
 ---
-title: We work in a glorified desert
+title: We work in glorified deserts
 description: \"The Forest and the Desert\" metaphor led me to think about my current frustration with the software industry.
 ---
 
