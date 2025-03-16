@@ -1,17 +1,17 @@
 ---
 layout: page
 title: Now
-date: 2025-02-17
+date: 2025-03-16
 ---
 
 ## 📚 Reading
-Almost done with [Thinking in Systems](https://www.chelseagreen.com/product/thinking-in-systems/). With every new chapter, the book gets more and more interesting.
+[El hombre que casi mató a Hitler](https://www.plataformaeditorial.com/libro/10264-el-hombre-que-casi-mato-a-hitler).
 
 ## 🎧 Listening
-I'm having a blast listening to Dream Theater's [Parasomnia](https://en.wikipedia.org/wiki/Parasomnia_(album)), the first release after Mike Portnoy rejoined the band. _Dead Asleep_ and _Bend the Clock_ are so far my favourite songs in the album.
+Dream Theater's [Parasomnia](https://en.wikipedia.org/wiki/Parasomnia_(album)) and Steven Wilson's [The Overview](https://en.wikipedia.org/wiki/The_Overview_(album)).
 
 ## 🏂 Sports
-Winter season continues. Despite catching the flu first and a cold one month later, I've managed to have some good snowboarding days. And hopefully more to come.
+Winter season continues. I tried [snowshoeing](https://en.wikipedia.org/wiki/Snowshoe) and I really liked it.
 
 ---
 
