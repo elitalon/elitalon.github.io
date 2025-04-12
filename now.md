@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Now
-date: 2025-03-16
+date: 2025-04-12
 ---
 
 ## 📚 Reading
@@ -10,8 +10,10 @@ date: 2025-03-16
 ## 🎧 Listening
 Dream Theater's [Parasomnia](https://en.wikipedia.org/wiki/Parasomnia_(album)) and Steven Wilson's [The Overview](https://en.wikipedia.org/wiki/The_Overview_(album)).
 
-## 🏂 Sports
-Winter season continues. I tried [snowshoeing](https://en.wikipedia.org/wiki/Snowshoe) and I really liked it.
+## 🏃🏻⛰️Sports
+Winter season is mostly over.
+
+I don't think I will go snowboarding again, so it's time now to prepare for hiking.
 
 ---
 
