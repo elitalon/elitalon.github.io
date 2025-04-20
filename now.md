@@ -1,19 +1,17 @@
 ---
 layout: page
 title: Now
-date: 2025-04-12
+date: 2025-04-20
 ---
 
 ## 📚 Reading
-[El hombre que casi mató a Hitler](https://www.plataformaeditorial.com/libro/10264-el-hombre-que-casi-mato-a-hitler).
+[La isla de la mujer dormida](https://www.perezreverte.com/libro/771/la-isla-de-la-mujer-dormida/).
 
 ## 🎧 Listening
 Dream Theater's [Parasomnia](https://en.wikipedia.org/wiki/Parasomnia_(album)) and Steven Wilson's [The Overview](https://en.wikipedia.org/wiki/The_Overview_(album)).
 
 ## 🏃🏻⛰️Sports
-Winter season is mostly over.
-
-I don't think I will go snowboarding again, so it's time now to prepare for hiking.
+Winter season is over, time to prepare for hiking.
 
 ---
 
