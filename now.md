@@ -1,20 +1,18 @@
 ---
 layout: page
 title: Now
-date: 2025-04-26
+date: 2025-06-15
 ---
 
 ## 📚 Reading
-[La isla de la mujer dormida](https://www.perezreverte.com/libro/771/la-isla-de-la-mujer-dormida/).
+[Ese imbécil va a escribir una novela](https://www.penguinlibros.com/es/literatura-contemporanea/371662-libro-ese-imbecil-va-a-escribir-una-novela-9788410496873).
 
 ## 🎧 Listening
-- Dream Theater's [Parasomnia](https://en.wikipedia.org/wiki/Parasomnia_(album))
-- Steven Wilson's [The Overview](https://en.wikipedia.org/wiki/The_Overview_(album))
+- Leprous's [Malina](https://en.wikipedia.org/wiki/Malina_(album))
 - Enrique Bunbury's [Cuentas Pendientes](https://es.wikipedia.org/wiki/Cuentas_pendientes)
-- Flying Color's [homonymous album](https://en.wikipedia.org/wiki/Flying_Colors_(Flying_Colors_album))
 
 ## 🏃🏻⛰️Sports
-Winter season is over, time to prepare for hiking.
+Doing strength work at the gym after some well-deserved holidays.
 
 ---
 
