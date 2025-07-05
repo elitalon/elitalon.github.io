@@ -1,18 +1,18 @@
 ---
 layout: page
 title: Now
-date: 2025-06-15
+date: 2025-07-05
 ---
 
 ## 📚 Reading
-[Ese imbécil va a escribir una novela](https://www.penguinlibros.com/es/literatura-contemporanea/371662-libro-ese-imbecil-va-a-escribir-una-novela-9788410496873).
+[Los 200 primeros casos de Mortadelo y Filemón](https://www.penguinlibros.com/es/libros-ninos-7-anos/370418-libro-los-200-primeros-casos-de-mortadelo-y-filemon-9788402430557).
 
 ## 🎧 Listening
-- Leprous's [Malina](https://en.wikipedia.org/wiki/Malina_(album))
 - Enrique Bunbury's [Cuentas Pendientes](https://es.wikipedia.org/wiki/Cuentas_pendientes)
+- Chick Corea and Return to Forever's [Light as a Feather](https://en.wikipedia.org/wiki/Light_as_a_Feather)
 
 ## 🏃🏻⛰️Sports
-Doing strength work at the gym after some well-deserved holidays.
+We've had some really hot weather, so I kept going to the gym because running outside is unbearable.
 
 ---
 
