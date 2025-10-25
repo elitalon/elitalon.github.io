@@ -1,21 +1,19 @@
 ---
 layout: page
 title: Now
-date: 2025-10-11
+date: 2025-10-25
 ---
 
 ## 📚 Reading
 [Head First Java](https://www.oreilly.com/library/view/head-first-java/9781492091646/).
 
 ## 🎧 Listening
-- Steven Wilson's [The Raven That Refused To Sing (and Other Stories)](https://en.wikipedia.org/wiki/The_Raven_That_Refused_to_Sing_(And_Other_Stories))
-- Nightwish's [Wishmaster](https://en.wikipedia.org/wiki/Wishmaster_(album))
-- Joe Bonamassa's [Different Shades of Blue](https://en.wikipedia.org/wiki/Different_Shades_of_Blue)
-- Enrique Bunbury's [Cuentas Pendientes](https://es.wikipedia.org/wiki/Cuentas_pendientes)
+- Joe Bonamassa's [Breakthrough](https://en.wikipedia.org/wiki/Joe_Bonamassa#Discography)
+- Muse's [The 2nd Law](https://en.wikipedia.org/wiki/The_2nd_Law)
 
 ## 🏃🏻⛰️Sports
-- Mixing strenght work at the gym with some 10k runs
-- Planning the yearly snowboard trip with friends
+- A silly cold kept me at home for little more than a week. Looking forward to go back to my routine
+- The yearly snowboard trip with my friends is planned. We go again to the Dolomites
 
 ---
 
