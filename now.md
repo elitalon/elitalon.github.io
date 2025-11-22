@@ -1,19 +1,19 @@
 ---
 layout: page
 title: Now
-date: 2025-10-25
+date: 2025-11-22
 ---
 
 ## 📚 Reading
-[Head First Java](https://www.oreilly.com/library/view/head-first-java/9781492091646/).
+- [Team Topologies, 2nd edition](https://teamtopologies.com/book)
 
 ## 🎧 Listening
 - Joe Bonamassa's [Breakthrough](https://en.wikipedia.org/wiki/Joe_Bonamassa#Discography)
-- Muse's [The 2nd Law](https://en.wikipedia.org/wiki/The_2nd_Law)
+- Fito y Fitipaldi's [El Monte de los Aullidos](https://es.wikipedia.org/wiki/El_monte_de_los_aullidos)
 
 ## 🏃🏻⛰️Sports
-- A silly cold kept me at home for little more than a week. Looking forward to go back to my routine
-- The yearly snowboard trip with my friends is planned. We go again to the Dolomites
+- Back at the gym and running after recovering from the last cold
+- Took my snowboard to its yearly maintenance. I'm aiming to do a first ride before November ends
 
 ---
 
