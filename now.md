@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Now
-date: 2025-12-06
+date: 2026-01-03
 ---
 
 ## 📚 Reading
@@ -9,12 +9,13 @@ date: 2025-12-06
 
 ## 🎧 Listening
 - Dream Theater's [Quarantième: Live à Paris](https://dreamtheater.net/discography-item/quarantieme-live-a-paris/)
-- The Beatles's [Anthology 4](https://en.wikipedia.org/wiki/Anthology_4)
 - Joe Bonamassa's [Breakthrough](https://en.wikipedia.org/wiki/Joe_Bonamassa#Discography)
 - Fito y Fitipaldi's [El Monte de los Aullidos](https://es.wikipedia.org/wiki/El_monte_de_los_aullidos)
+- Led Zeppelin's [IV](https://en.wikipedia.org/wiki/Led_Zeppelin_IV)
 
 ## 🏃🏻⛰️Sports
-- Had my first snowboarding day of the season 🤩
+- Less than one month for the snowboard trip to the Dolomites
+- Meanwhile, I'm doing strength training and going snowboarding on weekends every now and then
 
 ---
 
