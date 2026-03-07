@@ -1,19 +1,24 @@
 ---
 layout: page
 title: Now
-date: 2026-01-17
+date: 2026-03-07
 ---
 
 ## 📚 Reading
-- [Team Topologies, 2nd edition](https://teamtopologies.com/book)
+
+- [Don Quijote de La Mancha](https://letras.rae.es/ediciones-conmemorativas/110-don-quijote-de-la-mancha.html)
+- [Patterns of Enterprise Architecture](https://martinfowler.com/books/eaa.html)
 
 ## 🎧 Listening
-- Fito y Fitipaldi's [El Monte de los Aullidos](https://es.wikipedia.org/wiki/El_monte_de_los_aullidos)
-- Joe Bonamassa's [Breakthrough](https://en.wikipedia.org/wiki/Joe_Bonamassa#Discography)
-- Freak Kitchen's [Confusion To The Enemy](https://shop.freakkitchen.com/products/freak-kitchen-confusion-to-the-enemy-cd)
+
+- Ozzy Osbourne's [Blizzard of Ozz](https://en.wikipedia.org/wiki/Blizzard_of_Ozz)
+- Residente's [Las Letras Ya No Importan](https://en.wikipedia.org/wiki/Las_Letras_Ya_No_Importan)
+- Megadeth's [homonymous album](<https://en.wikipedia.org/wiki/Megadeth_(album)>)
+- [Los Sabandeños](https://en.wikipedia.org/wiki/Los_Sabande%C3%B1os)' Mar
 
 ## 🏃🏻⛰️Sports
-- Snowboarding season is full on
+
+Snowboarding season is full on – The trip to the [Dolomites](https://www.dolomitisuperski.com/) was a blast and in the next weeks I'll be spending a few days in [Crans-Montana](https://www.crans-montana.ch/) and [Zermatt](https://www.matterhornparadise.ch/).
 
 ---
 
