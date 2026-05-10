@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Now
-date: 2026-04-11
+date: 2026-05-10
 ---
 
 ## 📚 Reading
@@ -11,17 +11,14 @@ date: 2026-04-11
 
 ## 🎧 Listening
 
-- The Warning's [ERROR](<https://en.wikipedia.org/wiki/Error_(The_Warning_album)>) and [Keep Me Fed](https://en.wikipedia.org/wiki/Keep_Me_Fed)
-- Héroes del Silencio's [Parasiempre](https://en.wikipedia.org/wiki/Parasiempre)
-- [Sôber](https://en.wikipedia.org/wiki/S%C3%B4ber)'s Paradÿsso
-- Nightwish's [Yesterwynde](https://en.wikipedia.org/wiki/Yesterwynde) and [Wishmaster](<https://en.wikipedia.org/wiki/Wishmaster_(album)>)
-- Porcupine Tree's [Fear Of A Blank Planet](https://en.wikipedia.org/wiki/Fear_of_a_Blank_Planet)
-- Dream Theater's [Systematic Chaos](https://en.wikipedia.org/wiki/Systematic_Chaos)
+- Enrique Bunbury's [De Un Siglo Anterior](https://www.enriquebunbury.com/albums/de-un-siglo-anterior)
+- Paul McCartney's [Flaming Pie](https://en.wikipedia.org/wiki/Flaming_Pie)
 - Joe Bonamassa's [Breakthrough](<https://en.wikipedia.org/wiki/Breakthrough_(Joe_Bonamassa_album)>)
+- Porcupine Tree's [Closure/Continuation](https://en.wikipedia.org/wiki/Closure/Continuation)
 
 ## ⛰️ Sports
 
-Snowboarding season is over. Now planning a few spring hikes, but taking it easy because of my allergy to grass pollen.
+Slowing down my training significantly because I have two injuries that require medical treatment.
 
 ---
 
