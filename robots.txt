@@ -59,4 +59,4 @@ User-agent: omgili
 User-agent: omgilibot
 Disallow: /
 
-Sitemap: https://elitalon.github.io/sitemap.xml
+Sitemap: https://elitalon.com/sitemap.xml
