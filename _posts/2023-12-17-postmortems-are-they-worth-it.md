@@ -38,5 +38,7 @@ Being aware of their problems and cost can help us evaluate if they are the righ
 If postmortems work for you, then great! But make sure you don't adopt them just because if they work for someone else, they should for you too.
 
 [^1]: Later in 2016 Etsy also wrote [guidelines for facilitating postmortems](https://www.etsy.com/codeascraft/debriefing-facilitation-guide/).
-[^2]: Yes, I'm aware this is anecdotical and I might have just been extremely unlucky in my career.
+
+[^2]: Yes, I'm aware this is anecdotic and I might have just been extremely unlucky in my career.
+
 [^3]: Though I would definitely consider using less [macabre terminology](https://github.com/etsy/morgue).

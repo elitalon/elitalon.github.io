@@ -45,11 +45,11 @@ social:
   links:
     - https://mastodon.social/@elitalon
     - https://www.linkedin.com/in/elitalon
-    - https://github.com/elitalon
+    - https://codeberg.org/elitalon
 
 # License
 license:
-  source: "https://github.com/elitalon/elitalon.com"
+  source: "https://codeberg.org/elitalon/elitalon.github.io"
   url: "http://creativecommons.org/licenses/by/4.0/"
   title: "Creative Commons Attribution 4.0"
 

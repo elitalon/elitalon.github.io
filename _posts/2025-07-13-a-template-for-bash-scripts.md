@@ -9,7 +9,7 @@ I like to automate easy mundane tasks using shell scripts. They can be a wrapper
 
 If I don't need to process complex arguments to these scripts[^1], I normally write them in Bash. The main reason is that they're mostly self-contained, have great portability and integrate natively with the rest of the command-line interface.
 
-But I found myself writing more or less the same boilerplate code every time, like helper constants or log functions. So I created a [template](https://github.com/elitalon/dotfiles/blob/main/scripts/template.sh):
+But I found myself writing more or less the same boilerplate code every time, like helper constants or log functions. So I created a [template](https://codeberg.org/elitalon/dotfiles/blob/main/scripts/template.sh):
 
 ```bash
 #!/usr/bin/env bash
@@ -96,7 +96,7 @@ The downside of this template is that any future changes or improvements are not
 
 Note that I made it purposely simple to cover my needs. There are more [complete implementations](https://github.com/ralish/bash-script-template) out there with other use cases in mind that are definitely worth checking.
 
-Of course, creating an actual script from this template is another routine task in itself, so I created [a script for that](https://github.com/elitalon/dotfiles/blob/main/scripts/mkscript.sh) too (redacted for brevity):
+Of course, creating an actual script from this template is another routine task in itself, so I created [a script for that](https://codeberg.org/elitalon/dotfiles/blob/main/scripts/mkscript.sh) too (redacted for brevity):
 
 ```bash
 #!/usr/bin/env bash
