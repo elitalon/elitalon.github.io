@@ -10,6 +10,7 @@ User-agent: Applebot
 User-agent: Applebot-Extended
 User-agent: BacklinksExtendedBot
 User-agent: Brightbot 1.0
+User-agent: Brightbot
 User-agent: Bytespider
 User-agent: ChatGPT-User
 User-agent: Claude-SearchBot
