@@ -13,14 +13,17 @@ User-agent: Brightbot 1.0
 User-agent: Bytespider
 User-agent: ChatGPT-User
 User-agent: Claude-SearchBot
+User-agent: Claude-User
 User-agent: Claude-Web
 User-agent: ClaudeBot
 User-agent: Cotoyogi
+User-agent: Diffbot
 User-agent: Diffbot
 User-agent: DuckAssistBot
 User-agent: FacebookBot
 User-agent: Factset_spyderbot
 User-agent: GPTBot
+User-agent: Gemini-Deep-Research
 User-agent: Google-Extended
 User-agent: GoogleOther
 User-agent: GoogleOther-Image
