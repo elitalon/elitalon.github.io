@@ -9,7 +9,7 @@ timezone: "Europe/Zurich"
 feed_url: "https://elitalon.com/feed.xml"
 
 # Build settings
-exclude: ["public/css/Paratype PT Sans Free Font License.txt"]
+exclude: ["assets/css/web_fonts/Paratype PT Sans Free Font License.txt"]
 
 # Writing
 excerpt_separator: <!--more-->
