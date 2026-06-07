@@ -1,9 +1,8 @@
 ---
 layout: page
 title: About
+heading: Hi! I'm Eli
 ---
-
-Hi! I'm Eli.
 
 This is my weblog, where I publish random thoughts about software development and other miscellaneous stuff.
 

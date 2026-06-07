@@ -1,6 +1,6 @@
 <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
      styles, `#sidebar-checkbox` for behavior. -->
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" />
 
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
@@ -9,34 +9,45 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
+    <a
+      class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}"
+      href="{{ site.baseurl }}/"
+      >Home</a
+    >
 
-    {% assign pages_list = site.pages | sort:"url" %}
-    {% for node in pages_list %}
-      {% if node.title != null %}
-        {% if node.layout == "page" %}
-          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
+    {% assign pages_list = site.pages | sort:"url" %} {% for node in pages_list
+    %} {% if node.title != null %} {% if node.layout == "page" %}
+    <a
+      class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}"
+      href="{{ node.url }}"
+      >{{ node.title }}</a
+    >
+    {% endif %} {% endif %} {% endfor %}
 
     <!-- <a class="sidebar-nav-item" href=""></a> -->
     <!-- <span class="sidebar-nav-item"></span> -->
   </nav>
 
-  <div class="sidebar-item" style="text-align: center;">
-    {% assign prepend_dash = false %}
-    {% for social_media in site.social_media %}
-      {% assign title = social_media[0] %}
-      {% assign url = social_media[1] %}
-      {% if prepend_dash %}&nbsp;&ndash;&nbsp;{% endif %}
-      <a href="{{ url }}" title="{{ title }}" target="_blank">{{ title }}</a>
-      {% assign prepend_dash = true %}
-    {% endfor %}
+  <div class="sidebar-item" style="text-align: center">
+    {% assign prepend_dash = false %} {% for social_media in site.social_media
+    %} {% assign title = social_media[0] %} {% assign url = social_media[1] %}
+    {% if prepend_dash %}&nbsp;&ndash;&nbsp;{% endif %}
+    <a href="{{ url }}" title="{{ title }}" target="_blank">{{ title }}</a>
+    {% assign prepend_dash = true %} {% endfor %}
   </div>
 
   <div class="sidebar-item">
-    <p>This site is <a href="{{ site.license.source }}" title="View source code on GitHub" target="_blank">open source</a>. Content licensed under <a rel="license" href="{{ site.license.url }}" target="_blank">{{ site.license.title }}</a>
+    <p>
+      This site is
+      <a
+        href="{{ site.license.source }}"
+        title="View source code on GitHub"
+        target="_blank"
+        >open source</a
+      >. Content licensed under
+      <a rel="license" href="{{ site.license.url }}" target="_blank"
+        >{{ site.license.title }}</a
+      >
     </p>
   </div>
 </div>
