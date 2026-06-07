@@ -30,7 +30,7 @@ When it comes to data storage, mobile apps that persist data on the device can m
 
 Finally, releasing a mobile app through an official app store can take from half a day to multiple days. This was always a challenge in situations where I needed to address a serious issue. But deploying a backend application can be a matter of minutes if you have a decent [continuous delivery](https://en.wikipedia.org/wiki/Continuous_delivery) setup, which is great.
 
-These are just some examples of the differences that stood up quite early on. And that’s without mentioning how much more enjoyable my development experience is now compared to using Xcode and Swift.
+These are just some examples of the differences that stood up quite early on. And that's without mentioning how much more enjoyable my development experience is now compared to using Xcode and Swift.
 
 Working with [IntelliJ IDEA](https://www.jetbrains.com/idea/), an IDE that is consistently reliable and gives you powerful refactoring features, and a stable and mature language like Java, is a blessing. [Boring technology](https://boringtechnology.club/) works!
 

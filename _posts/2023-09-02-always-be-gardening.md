@@ -2,14 +2,15 @@
 title: Always be gardening
 description: Edited repost of "Always be gardening", an article I wrote in FAIRTIQ's blog.
 ---
+
 For posterity's sake I'm reposting a slightly edited version of [an article](https://fairtiq.com/en/tech/always-be-gardening) I published on FAIRTIQ's [Tech Blog](https://fairtiq.com/en/tech) in May 2023.
 
-<!--more-->
----
+## <!--more-->
 
 As a software engineer I've always been interested in learning effective development techniques. But it was only recently that I started describing my experience as having an "always be gardening" mindset.
 
 ## What is gardening?
+
 The [Oxford Dictionary of English](https://www.oed.com/) defines gardening as:
 
 > _The activity of tending and cultivating a garden, especially as a pastime._
@@ -25,6 +26,7 @@ It's also a continuous activity because it has little value if we remove weeds o
 The central idea is that making small and continuous improvements over time is one of the most effective ways to keep a codebase in a healthy state.
 
 ## Why is gardening important?
+
 Gardening is important because software is meant to be changed. And if software is meant to be changed, code complexity, in any of its forms, is our number one enemy.
 
 I think we can all agree that the complexity of a piece of code is inversely correlated with the ease of changing it to meet the desired functionality and quality. The more complex and messy the code, the less capable we are to handle it with ease.
@@ -42,9 +44,10 @@ We cannot get rid of essential complexity, which is intrinsic to the problem dom
 
 But there's also accidental complexity, which results from the choices we make in our solutions: the programming language, the architecture, unmanaged technical debt, the lack of a test harness, the naming of types and functions, etc.
 
-Our goal shouldn’t be to eliminate complexity entirely. I don’t think that's realistic. But we should aim to reduce it to the bare minimum, so that we can manage the code with comfort and confidence.
+Our goal shouldn't be to eliminate complexity entirely. I don't think that's realistic. But we should aim to reduce it to the bare minimum, so that we can manage the code with comfort and confidence.
 
 ## OK, but is it _really_ that important?
+
 If you need another reason why gardening is important, let me tell you my experience at FAIRTIQ as an iOS developer.
 
 Historically we've had more Android than iOS developers in the company. This is common in many teams, because external factors specific to Android as a platform (e.g. the variety of vendors) sometimes require having more capacity. But after restructuring the Tech Team in 2019, I ended up in a squad where that imbalance was higher.
@@ -64,6 +67,7 @@ So gardening for me has also become a survival mechanism in situations like this
 4. Being able to carefully and intentionally choose when to incur in new technical debt, while continuously paying the existing one
 
 ## How can we actually do gardening?
+
 All of this sounds good in theory, but how can we actually do gardening in practice? In my experience I've found that these three aspects are essential:
 
 1. Practice – detecting complexity and choosing the right treatment requires trying, learning from your mistakes and getting help from more experienced developers
@@ -78,9 +82,10 @@ With that in mind I would like to share some practical things I do:
 4. [Testing is your friend](#testing-is-your-friend)
 5. [Code is an expense](#code-is-an-expense)
 
-This is first and foremost my personal experience. It's what I’ve found to work for me and the projects I’ve worked on. But I believe it can be beneficial for you too.
+This is first and foremost my personal experience. It's what I've found to work for me and the projects I've worked on. But I believe it can be beneficial for you too.
 
 ### Don't ask for permission
+
 I consider gardening part of my day to day work, the same way I push commits to a repository or fix a failing build in our CI service.
 
 I don't wait for Product Owners, Project Leaders or any other stakeholder to tell me when to clean the code. Gardening is our responsibility as engineers and we should be the ones leading this aspect of product development. Fortunately, this is the case at FAIRTIQ, because our culture encourages engineers to do that. And in my particular experience, no stakeholder has had a major issue with it so far[^3].
@@ -90,11 +95,12 @@ I don't create separate tasks for what I need to do either. If I can anticipate 
 Remember that gardening is all about small steps done continuously over time. If a change is small enough, the overhead of creating a task, discussing it during planning and convincing the Project Leader or the Product Owner that it needs to be done, probably takes more time than the change itself.
 
 ### Keep your own list of pain points
+
 Another thing that I do is keep my own list of pain points: parts of the code that I find difficult to work with and are candidates for improving.
 
 I do this because gardening requires an [act of balance](#finding-a-balance). Our work as engineers is subject to deadlines and expectations from stakeholders and our own team. We have to consider the context to understand the impact of doing gardening at a given moment.
 
-So when I see a piece of code that’s cumbersome to work with, I stop and assess the situation:
+So when I see a piece of code that's cumbersome to work with, I stop and assess the situation:
 
 <img src="{{ site.url }}/files/abg_figure-01-decision-flow-to-assess-a-potential-gardening.png" alt="" width="100%" />
 
@@ -107,31 +113,37 @@ If the required gardening is not small and the code is not related to the task a
 I revisit my list of pain points often to see when and how we can deal with them. Sometimes I just leave them there for future reference; it turns out that sooner or later they will be addressed as part of upcoming work (e.g. when adding a new feature). But if I think we should tackle them I follow different strategies, as I describe next.
 
 ### Have a strategy
+
 Small improvements are ideal to execute during an ongoing task and go a long way over time, even when it's something as simple as renaming a variable or a method.
 
 But what happens with medium or big changes? I use different approaches depending on the context.
 
 #### Making a bet
+
 When the end of an iteration (a.k.a. sprint or cycle) is approaching, it's tempting to take shortcuts and avoid gardening. But I know that spending time today to get something right will prevent rework tomorrow.
 
 So I take a step back, go over the options and assess if gardening will put the goal at risk. Then I make a bet. Sometimes I win, meaning that I could do the gardening and achieve the goal. But sometimes I lose, meaning that I could do the gardening but didn't have time to finish all planned work. In this last case I take responsibility and consider it as part of my learning process as an engineer.
 
 #### Using spare time
+
 If I think I won't have enough time and decide to skip gardening, I wait until I have finished all planned work. If the iteration is still open and I don't have anything else to do, I use that spare time instead of picking something else from the backlog.
 
 But be careful with deadlines! Sometimes the right thing to do is to actually pick the next thing from the backlog.
 
 #### Planning for large improvements
+
 For large improvements I usually draft a plan. I decompose it in small steps that ideally can be executed in isolation. I tell the team if the code is intended to be in a half-way state until we finish. I leave comments in the code explaining why something is not optimal but it's OK because it's intentional and temporary.
 
 Beware though that no plan survives first contact with the enemy. The steps that make sense today might not make sense in a month because the code keeps evolving. That's why I find it best to state the plan in terms of the general problem I want to solve and keep implementation details to a minimum.
 
 ### Testing is your friend
+
 When I decide to proceed with gardening, testing is fundamental for me. Nowadays roughly 2/3 of the code I write, if not more, is guided by tests. I don't want to convince you to adopt [TDD](https://en.wikipedia.org/wiki/Test-driven_development). It works for me, but there are other ways to write well designed and testable code.
 
 Regardless of the actual approach, the underlying idea is still the same: we need to have tests before refactoring. Because, again, when we refactor we are not changing the behaviour of the code, only the structure.
 
 ### Code is an expense
+
 When it comes to deciding a concrete treatment during gardening, I like to think about code as an expense. In practical terms this means that less code is good code and no code is the best code.
 
 I'm not going to go over refactoring techniques nor design principles because there's plenty of literature about it. If you want to start somewhere, I think Martin Fowler's [Refactoring](https://www.goodreads.com/book/show/35135772-refactoring) should be mandatory reading. Not because of the refactoring recipes themselves, which are great. For me the greatest value comes from the analysis of coding smells in the first part of the book.
@@ -141,9 +153,11 @@ Another reason why I don't want to talk about concrete refactoring techniques or
 That said, I would like to share two general guidelines that influence how I design and refactor code today.
 
 #### Duplication is better than the wrong abstraction
-I'm fine with duplicated code to a certain extent. Sometimes it's crystal clear that a piece of logic will be useful in other parts of the code. But sometimes a solution is quite specific to a context and it's difficult to tell what the right abstraction is. Here the [rule of three](https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)) is helpful.
+
+I'm fine with duplicated code to a certain extent. Sometimes it's crystal clear that a piece of logic will be useful in other parts of the code. But sometimes a solution is quite specific to a context and it's difficult to tell what the right abstraction is. Here the [rule of three](<https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)>) is helpful.
 
 #### YAGNI, SOLID, DRY, in that order
+
 [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it), the [SOLID](https://en.wikipedia.org/wiki/SOLID) ~~principles~~[^4] guidelines and [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) are helpful but sometimes they conflict with each other. For example, following the SOLID principles may lead us to create more classes than we really need to solve a simple problem.
 
 That's why I follow a kind of priority list:
@@ -154,16 +168,17 @@ That's why I follow a kind of priority list:
 
 This means that some duplication can be fine (hence DRY comes last) and the SOLID principles are great to guide the overall design of software. But above all, we should implement things only when we actually need them. I try to resist visionary solutions for imaginary problems I don't have today.
 
-And that's also why sometimes I don’t apply design patterns by the book if they don't fit the problem exactly as they are meant for. This happens in our iOS apps in some cases, especially when the design of surrounding components is not ready to support a pattern as intended.
+And that's also why sometimes I don't apply design patterns by the book if they don't fit the problem exactly as they are meant for. This happens in our iOS apps in some cases, especially when the design of surrounding components is not ready to support a pattern as intended.
 
 ## Finding a balance
-You might be thinking that some of the things I’ve said contradict each other. That’s entirely possible. But it’s at these “friction” points where experience comes into play. After years of practice I still make mistakes and continue learning when I need to go in one direction or another. It turns out, finding the right balance is hard.
+
+You might be thinking that some of the things I've said contradict each other. That's entirely possible. But it's at these “friction” points where experience comes into play. After years of practice I still make mistakes and continue learning when I need to go in one direction or another. It turns out, finding the right balance is hard.
 
 Part of finding that balance is accepting that today I know less than tomorrow. I don't try to find the perfect architecture, choose the perfect variable name or apply the perfect abstraction. I work with the knowledge about a problem I have today and stay pragmatic.
 
 For example, I don't think renaming a method that I had already renamed last week is a waste of time if today I have a better understanding of the domain. It was probably the right call back then, because it reflected the knowledge I had. And it's probably the right call now too, because I know more.
 
-I hope I've been able to inspire you to integrate this mindset as part of your work. This is something that might not be news for you, but it’s helpful to have a reminder from time to time.
+I hope I've been able to inspire you to integrate this mindset as part of your work. This is something that might not be news for you, but it's helpful to have a reminder from time to time.
 
 And if you disagree with something, that's fine! As [Ron Jeffries wrote](https://ronjeffries.com/articles/-z022/0222ff/terms/):
 
@@ -174,6 +189,7 @@ And if you disagree with something, that's fine! As [Ron Jeffries wrote](https:/
 What follows is a section excluded from [the original article](https://fairtiq.com/en/tech/always-be-gardening) for brevity, but I think it's only fair to give credit where its due.
 
 ## Where did I learn all this?
+
 I didn't come up with all this knowledge myself. Over the last years I have become quite interested in effective coding techniques. I have studied and learned from many different authors.
 
 This is a selection of the many resources I have used, which are mostly books and talks, in no particular order:
@@ -190,6 +206,9 @@ This is a selection of the many resources I have used, which are mostly books an
 - [How to not build legacy systems that everyone hates](https://www.youtube.com/watch?v=Kwtit8ZEK7U), by Chris James
 
 [^1]: The expression has its origins in “Mobile Gardening”, a name that [Seán Labastille](https://twitter.com/flufffel) coined for a weekly meeting that mobile developers used to have at FAIRTIQ. I liked it when I heard it the first time and started drawing on this idea of treating a codebase as a garden. I could have used "always be refactoring", but I don't think refactoring alone conveys the same meaning.
+
 [^2]: You might have heard an alternative take: "functionality is an asset, code is a liability".
+
 [^3]: At the time of writing I have been in the company for more than four years.
+
 [^4]: I prefer [Kevlin's Henney reframing](https://www.youtube.com/watch?v=tMW08JkFrBA) of SOLID as guidelines, rather than principles.

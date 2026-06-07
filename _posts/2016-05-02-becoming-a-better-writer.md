@@ -2,7 +2,8 @@
 title: Becoming a better writer
 description: Why having good writing skills matters for me
 ---
-["Why Scrum Should Basically Just Die In A Fire"](https://archive.is/Rjqh0) is the title of an article written by [Giles Bowkett](https://twitter.com/gilesbowkett) that caught my attention a few months ago. Among all the topics discussed, he suggests that the [Agile Manifesto](http://agilemanifesto.org/principles.html) principle about face-to-face communication "might be to blame" for inspiring Scrum's [daily stand-up](https://en.wikipedia.org/wiki/Scrum_(software_development)#Daily_scrum).
+
+["Why Scrum Should Basically Just Die In A Fire"](https://archive.is/Rjqh0) is the title of an article written by [Giles Bowkett](https://twitter.com/gilesbowkett) that caught my attention a few months ago. Among all the topics discussed, he suggests that the [Agile Manifesto](http://agilemanifesto.org/principles.html) principle about face-to-face communication "might be to blame" for inspiring Scrum's [daily stand-up](<https://en.wikipedia.org/wiki/Scrum_(software_development)#Daily_scrum>).
 
 <!--more-->
 
@@ -25,11 +26,12 @@ This might sound a bit radical, especially when you are sharing an office space 
 So taking things in balance, to what extent is writing an important resource in an engineer's toolkit?
 
 ## The importance of good writing skills
+
 Back in 2007, when I was doing my internship, I borrowed [Getting Real](https://gettingreal.37signals.com) from my mentor. I learnt a lot from it and to this day I think it contains superb advice for any company.
 
 On the [Wordsmiths](https://basecamp.com/gettingreal/08.6-wordsmiths#hire-good-writers) chapter they talk about a curious hiring policy:
 
-> _If you are trying to decide between a few people to fill a position, always hire the better writer. It doesn’t matter if that person is a designer, programmer, marketer, salesperson, or whatever, the writing skills will pay off. Effective, concise writing and editing leads to effective, concise code, design, emails, instant messages, and more._
+> _If you are trying to decide between a few people to fill a position, always hire the better writer. It doesn't matter if that person is a designer, programmer, marketer, salesperson, or whatever, the writing skills will pay off. Effective, concise writing and editing leads to effective, concise code, design, emails, instant messages, and more._
 
 > _Good writers know how to communicate. They make things easy to understand. They can put themselves in someone else's shoes. They know what to omit. They think clearly. And those are the qualities you need._
 
@@ -47,6 +49,7 @@ Did you notice the pattern above? Writing effectively is not about you. It's abo
 You can argue that those skills are naturally crucial in open-source projects because that's the way work is done, but it's not that important when your team is in the same room. Maybe you're right. But I have found that frequently those are just excuses to justify my laziness and lack of empathy for others.
 
 ## When in doubt, write it down
+
 Face-to-face is sometimes the faster and most efficient way to go. It can convey more information in extended discussions, which otherwise would turn into a mess (e.g. scrolling a hundred of chat messages). [Non-verbal communication](https://en.wikipedia.org/wiki/Nonverbal_communication) also helps understand the nuances of spoken words.
 
 But don't underestimate the power of having good writing skills either. It helps you organise and communicate ideas clearly, it helps everyone understand them, it reduces the need of interrupting others and it helps you think twice before saying the first thing that comes to mind. As a consequence, it helps you stand out as a professional.

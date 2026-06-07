@@ -25,7 +25,7 @@ My friend and I are both native Spanish speakers and, naturally, we talked in Sp
 
 **Me:** It's true that in some rare cases the resulting design is not the simplest. But I think it's a trade-off worth making when you consider all other benefits.
 
-**Me:** I'm not dogmatic either. There are times when I write tests after the fact. My guess is that nowadays I write 80% of my code using TDD and the rest ‘the old way’
+**Me:** I'm not dogmatic either. There are times when I write tests after the fact. My guess is that nowadays I write 80% of my code using TDD and the rest "the old way"
 
 **Friend:** You tend to write less code?! Break it down.
 

@@ -6,7 +6,7 @@ title: It's only a bit more energy
 
 Ron Jeffries in ["Addiction Is Not a Sin"](https://ronjeffries.com/articles/-v026/v/y/):
 
-> LLM-“AI” is a destroyer of the environment, a violator of copyright law, a machine that takes the jobs of people who need them, a tool of the oligarchy, a pump moving money from all of us toward the rich. That’s enough to keep me as far from the things as I can get.
+> LLM-“AI” is a destroyer of the environment, a violator of copyright law, a machine that takes the jobs of people who need them, a tool of the oligarchy, a pump moving money from all of us toward the rich. That's enough to keep me as far from the things as I can get.
 
 [Cryptocurrencies](https://en.wikipedia.org/wiki/Cryptocurrency), an application of a "shiny new"[^1] technology like [blockchain](https://en.wikipedia.org/wiki/Blockchain), have received a lot of criticism for their [excessive use of energy](https://en.wikipedia.org/wiki/Environmental_impact_of_bitcoin). This and their dangerous speculative nature made them fall into a sort of niche market and eventually lose mainstream popularity.
 
