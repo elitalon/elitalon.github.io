@@ -4,9 +4,9 @@ title: Racismo en sus múltiples formas
 
 <!--more-->
 
-> _This post is in Spanish because it deals with a somewhat emotional topic and it was easier for me to write in my mother tongue. If you prefer, there's a [version in English](/2026/06/07/different-shades-of-racism/), translated by me._
+> _This post is in Spanish because it deals with a somewhat emotional topic and it was easier for me to write in my mother tongue. If you prefer, there's a [version in English](/2026/06/07/different-shades-of-racism/)._
 
-<div style="margin-top: 2em;"></div>
+<div style="margin-top: 2em;" />
 
 No fui consciente de que el racismo seguía siendo un mal endémico en Europa hasta que fui adolescente, empecé a viajar más por mi cuenta, sobre todo fuera de España, y vi el mundo por mis propios ojos.
 

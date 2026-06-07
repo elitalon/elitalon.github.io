@@ -7,7 +7,7 @@ hidden: true
 
 > _This post is an edited translation of the [original version](/2026/06/07/racismo-en-sus-multiples-formas/) I published in Spanish._
 
-<div style="margin-top: 2em;"></div>
+<div style="margin-top: 2em;" />
 
 I didn’t realise that racism was still an endemic problem in Europe until I was a teenager, started travelling on my own, especially outside Spain, and saw the world with my own eyes.
 
