@@ -90,4 +90,4 @@ Tarde o temprano la vida nos pone en nuestro sitio y ese día entendí, una vez 
 
 [^2]: Andalucía y Canarias comparten rasgos culturales, y entre ellos está la pronunciación de ciertos fonemas del español. No es casualidad: muchos de los conquistadores y primeros colonos que habitaron Canarias provenían de Andalucía y [Extremadura](https://es.wikipedia.org/wiki/Extremadura).
 
-[^3]: A veces he tenido la tentación de hacer un árbol genealógico de bolsillo mostrando que, por el lado materno, todos mis antepasados de al menos cuatro generaciones atrás nacieron en Canarias. Sólo mi abuelo paterno nació en [Valencia](https://es.wikipedia.org/wiki/Comunidad_Valenciana). Y mi primer apellido, de hecho, es originario de Francia.
+[^3]: A veces he tenido la tentación de hacer un árbol genealógico de bolsillo mostrando que, por el lado materno y casi todo el paterno, todos mis antepasados de al menos cuatro generaciones atrás nacieron en Canarias. Sólo mi abuelo paterno nació en [Valencia](https://es.wikipedia.org/wiki/Comunidad_Valenciana). Y mi primer apellido, de hecho, es originario de Francia.
