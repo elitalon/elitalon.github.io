@@ -1,0 +1,25 @@
+name: Publish
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  publish:
+    runs-on: codeberg-tiny-lazy
+    container:
+      image: ruby:3-trixie
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+      - name: Install gems
+        run: |
+          bundle config set path vendor/bundle
+          bundle install
+      - name: Build site
+        run: bundle exec jekyll build
+      - uses: https://codeberg.org/git-pages/action@v2
+        with:
+          site: https://${{ forge.event.repository.owner.username }}.codeberg.page/${{ forge.event.repository.name }}/
+          token: ${{ forge.token }}
+          source: _site/
