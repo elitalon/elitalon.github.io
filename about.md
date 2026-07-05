@@ -30,6 +30,6 @@ Over the years I've also helped create [Cloquo](https://web.archive.org/web/2014
 
 This site is static HTML built using [Jekyll](https://jekyllrb.com/) and a custom theme largely ~~inspired by~~ copied from Mark Otto's [Lanyon](https://github.com/poole/lanyon).
 
-All the code sits in [Github](https://github.com/elitalon/elitalon.github.io) and [Codeberg](https://codeberg.org/elitalon/elitalon.github.io), and the site is hosted on [GitHub Pages](https://docs.github.com/pages). I'm in the process of migrating the hosting over to [Codeberg Pages](https://docs.codeberg.org/codeberg-pages/), but I'm waiting until their new system is ready.
+All the code sits in [Codeberg](https://codeberg.org/elitalon/elitalon.com), and the site is hosted on [Codeberg Pages](https://docs.codeberg.org/codeberg-pages/).
 
 I don’t run any analytics software and no deliberate attempt is made by me to track you with cookies or any other technology. I never look at the logs because I don't have access to them, but I would assume my hosting provider keeps some information about your visit.
