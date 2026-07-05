@@ -1,5 +1,10 @@
 # elitalon.com
 
+> [!WARNING]
+> This repository is now maintained at [codeberg.org/elitalon/elitalon.com](https://codeberg.org/elitalon/elitalon.com) and this GitHub mirror may be out of date.
+>
+> Please file issues and contributions on Codeberg.
+
 This is the source code of the blog [elitalon.com](https://elitalon.com).
 
 ## Author
