@@ -20,6 +20,7 @@ jobs:
       - name: Publish site
         uses: https://codeberg.org/git-pages/action@v2
         with:
-          site: https://${{ forge.event.repository.owner.username }}.codeberg.page/${{ forge.event.repository.name }}/
+          site: https://elitalon.com/
+          server: codeberg.page
           token: ${{ forge.token }}
           source: _site/
