@@ -24,3 +24,10 @@ jobs:
           server: codeberg.page
           token: ${{ forge.token }}
           source: _site/
+      - name: Publish site on www subdomain
+        uses: https://codeberg.org/git-pages/action@v2
+        with:
+          site: https://www.elitalon.com/
+          server: codeberg.page
+          token: ${{ forge.token }}
+          source: _site/
